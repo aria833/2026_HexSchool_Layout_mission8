@@ -2,6 +2,12 @@
   width: 116.5px;
 }
 
+@media (min-width: 992px) {
+  .logo {
+    width: 233px;
+  }
+}
+
 .menu-btn {
   font-family: "Material Symbols Outlined";
   line-height: 1;
@@ -25,5 +31,14 @@
 
   .fill {
     font-variation-settings: "FILL" 1;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    margin-top: 56px;
+    //導覽列 96px + margin-top的 56px
+    margin-bottom: -152px;
   }
 }

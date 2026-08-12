@@ -1,9 +1,11 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-  <div class="container">
+<nav class="navbar navbar-expand-lg sticky-top py-lg-5">
+  <div class="container-fluid px-lg-15">
     <!--Logo-->
-    <a class="navbar-brand" href="index.html"
+    <a class="navbar-brand py-0" href="index.html"
       ><img src="../assets/images/logo.png" alt="logo" class="logo"
     /></a>
+
+    <!--TODO:會員頭像-->
 
     <!--漢堡選單-->
     <button
@@ -17,52 +19,58 @@
     ></button>
 
     <!--漢堡展開選單-->
-    <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">
-      <div class="py-9 d-lg-none">
-        <div class="bg-secondary rounded-circle avatar mb-2">
+    <div
+      class="collapse navbar-collapse pt-2 pt-lg-0 text-center bg-neutral-100"
+      id="navbarSupportedContent"
+    >
+      <div class="py-9 d-lg-none border-top border-bottom border-neutral-200">
+        <!--訪客資訊-->
+        <div class="bg-secondary rounded-circle avatar mb-2 mx-auto">
           <span class="material-symbols-outlined fill text-white">
             person
           </span>
         </div>
+        <p class="fw-bold text-gray-black">訪客</p>
       </div>
 
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
+      <!--功能按鈕-->
+      <ul
+        class="navbar-nav flex-row mb-11 mb-lg-0 ms-lg-auto bg-lg-white ps-lg-11 pe-lg-9 rounded-lg-4"
+      >
+        <li class="nav-item flex-grow-1 me-lg-9">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link link-primary-dark py-5 ps-10 fw-bold py-lg-7 px-lg-0"
             href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
+            ><span class="material-symbols-outlined d-block mb-3 d-lg-none"
+              >search</span
+            >好房查詢</a
           >
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        <li class="nav-item flex-grow-1 me-lg-10">
+          <a
+            class="nav-link link-primary-dark py-5 pe-10 fw-bold py-lg-7 px-lg-0"
+            href="#"
+            ><span class="material-symbols-outlined d-block mb-3 d-lg-none"
+              >paid</span
+            >房貸試算</a
+          >
+        </li>
+        <li class="nav-item flex-grow-1 d-none d-lg-block my-auto">
+          <a
+            class="fw-bold btn btn-secondary text-white px-7 py-4 lh-1 rounded-2"
+            href="#"
+            >登入/註冊</a
+          >
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+
+      <!--登入/註冊按鈕-->
+      <button
+        type="button"
+        class="btn btn-primary btn-standard fw-bold w-100 rounded-2 d-lg-none mb-5"
+      >
+        登入 / 註冊
+      </button>
     </div>
   </div>
 </nav>
