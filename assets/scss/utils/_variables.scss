@@ -7,29 +7,31 @@
 
 // scss-docs-start gray-color-variables
 //TODO:自定義
-$gray-white: #ffffff;
-$gray-100: #f9f9f9;
-$gray-200: #eaeaea;
-$gray-400: #bdbdbd;
-$gray-700: #777777;
-$gray-800: #555555;
-$gray-black: #111111;
+$neutral-0: #ffffff;
+$neutral-100: #f9f9f9;
+$neutral-200: #eaeaea;
+$neutral-400: #bdbdbd;
+$neutral-700: #777777;
+$neutral-800: #555555;
+$black: #111111;
+$default: $neutral-700;
+$dark: $black;
 
-$white: #ffffff;
+$white: $neutral-0;
 $light: #b8b8b8;
-$default: #777777;
-$dark: #111111;
+$gray-dark: #919191;
+$gray-black: #2f3031;
 
 //原有的
 //$white:    #fff !default;
-//$gray-100: #f8f9fa !default;
-//$gray-200: #e9ecef !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
-//$gray-400: #ced4da !default;
+$gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
-//$gray-700: #495057 !default;
-//$gray-800: #343a40 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 // scss-docs-end gray-color-variables
@@ -317,15 +319,13 @@ $cyans: (
 $primary-sup-light-2: #f2ffe6;
 $primary-sup-light: #d6e9c5;
 $primary-light: #a6bf90;
-$primary-default: #667857;
+$primary: #667857;
 $primary-dark: #425035;
-$primary: $primary-default;
 
 $secondary-sup-light: #fff6ee;
 $secondary-light: #ffd9ba;
-$secondary-default: #ff9e51;
+$secondary: #ff9e51;
 $secondary-dark: #ff8b2d;
-$secondary: $secondary-default;
 
 $accent: #f26b4d;
 $state-error: #ff4545;
@@ -347,28 +347,23 @@ $theme-colors: (
   "primary-sup-light-2": $primary-sup-light-2,
   "primary-sup-light": $primary-sup-light,
   "primary-light": $primary-light,
-  "primary-default": $primary-default,
   "primary-dark": $primary-dark,
 
   "secondary-sup-light": $secondary-sup-light,
   "secondary-light": $secondary-light,
-  "secondary-default": $secondary-default,
   "secondary-dark": $secondary-dark,
 
   "accent": $accent,
   "state-error": $state-error,
   "state-success": $state-success,
 
-  "gray-white": $gray-white,
-  "gray-100": $gray-100,
-  "gray-200": $gray-200,
-  "gray-400": $gray-400,
-  "gray-700": $gray-700,
-  "gray-800": $gray-800,
-  "gray-black": $gray-black,
-
-  "white": $white,
-  "light": $light,
+  "neutral-0": $neutral-0,
+  "neutral-100": $neutral-100,
+  "neutral-200": $neutral-200,
+  "neutral-400": $neutral-400,
+  "neutral-700": $neutral-700,
+  "neutral-800": $neutral-800,
+  "black": $black,
   "default": $default,
   "dark": $dark,
 
@@ -482,22 +477,24 @@ $spacers: (
   0: 0,
   1: $spacer * 0.25,
   2: $spacer * 0.5,
-  3: $spacer * 0.75,
-  4: $spacer,
-  5: $spacer * 1.25,
-  6: $spacer * 1.5,
-  7: $spacer * 1.75,
-  8: $spacer * 2,
-  9: $spacer * 2.5,
-  10: $spacer * 3,
-  11: $spacer * 3.25,
-  12: $spacer * 3.75,
-  13: $spacer * 4,
-  14: $spacer * 5,
-  15: $spacer * 6.25,
-  16: $spacer * 7.5,
-  17: $spacer * 10,
-  18: $spacer * 12.5,
+  3: $spacer * 0.625,
+  4: $spacer * 0.75,
+  5: $spacer,
+  6: $spacer * 1.25,
+  7: $spacer * 1.5,
+  8: $spacer * 1.75,
+  9: $spacer * 2,
+  10: $spacer * 2.5,
+  11: $spacer * 3,
+  12: $spacer * 3.25,
+  13: $spacer * 3.75,
+  14: $spacer * 4,
+  15: $spacer * 5,
+  16: $spacer * 6.25,
+  17: $spacer * 7.5,
+  18: $spacer * 10,
+  19: $spacer * 12.5,
+  20: $spacer * 13.75,
 
   //原有的
   //0: 0,
