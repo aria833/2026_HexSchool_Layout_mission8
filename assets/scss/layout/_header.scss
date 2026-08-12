@@ -1,68 +1,29 @@
-//漢堡選單展開時，要顯示原本的header
-//改變下拉選單位置
-.offcanvas.offcanvas-top {
-  top: 56px;
-  height: auto;
-  @media (min-width: 992px) {
-    top: 96px;
-  }
-}
-//遮罩位置往下移
-.offcanvas-backdrop {
-  top: 56px;
-
-  @media (min-width: 992px) {
-    top: 96px;
-  }
-}
-
-//logo大小
 .logo {
   width: 116.5px;
-  height: auto;
+}
 
-  @media (min-width: 992px) {
-    width: 233px;
-    height: auto;
+.menu-btn {
+  font-family: "Material Symbols Outlined";
+  line-height: 1;
+  font-size: 28px;
+
+  &.collapsed::before {
+    content: "menu";
+  }
+
+  &::before {
+    content: "close";
   }
 }
 
-.material-symbols-outlined.filled {
-  font-variation-settings:
-    "FILL" 1,
-    "wght" 400,
-    "GRAD" 0,
-    "opsz" 24;
-}
-
-.menu-icon {
-  padding: 6px 14px;
-}
-
-.avatar-size {
+.avatar {
   width: 50px;
-  height: auto;
-  padding: 5px;
-}
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.padding-5 {
-  padding: 5px;
-}
-
-.margin-bottom-10 {
-  margin-bottom: 10px;
-}
-
-.padding-x-36 {
-  padding-left: 36px;
-  padding-right: 36px;
-}
-
-.member-photo {
-  width: 28px;
-  height: auto;
-}
-
-.member-photo-padding {
-  padding: 6px 14px;
+  .fill {
+    font-variation-settings: "FILL" 1;
+  }
 }
