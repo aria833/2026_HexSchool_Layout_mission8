@@ -1,0 +1,54 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    //開啟文字大小的響應式變化
+    "font-size": map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+    //開啟位置的響應式變化
+    "position": map-merge(
+        map-get($utilities, "position"),
+        (
+          responsive: true,
+        )
+      ),
+    //開啟背景顏色的響應式變化
+    "background-color": map-merge(
+        map-get($utilities, "background-color"),
+        (
+          responsive: true,
+        )
+      ),
+    //FIXME:(確認設計稿是否要擴充）背景透明度擴充樣式
+    "bg-opacity": map-merge(
+        map-get($utilities, "bg-opacity"),
+        (
+          responsive: true,
+          values: map-merge(
+              map-get(map-get($utilities, "bg-opacity"), "values"),
+              (
+                8: 0.08,
+                12: 0.12,
+              )
+            ),
+        )
+      ),
+    //FIXME:(確認設計稿是否要擴充）邊線透明度擴充樣式
+    "border-opacity": map-merge(
+        map-get($utilities, "border-opacity"),
+        (
+          responsive: true,
+          values: map-merge(
+              map-get(map-get($utilities, "border-opacity"), "values"),
+              (
+                8: 0.08,
+                12: 0.12,
+              )
+            ),
+        )
+      )
+  )
+);

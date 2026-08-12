@@ -1,4 +1,28 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+//漢堡選單展開時，要顯示原本的header
+//改變下拉選單位置
+.offcanvas.offcanvas-top {
+  top: 56px;
+  height: auto;
+  @media (min-width: 992px) {
+    top: 96px;
+  }
+}
+//遮罩位置往下移
+.offcanvas-backdrop {
+  top: 56px;
+
+  @media (min-width: 992px) {
+    top: 96px;
+  }
+}
+
+//logo大小
+.logo {
+  width: 116.5px;
+  height: auto;
+
+  @media (min-width: 992px) {
+    width: 233px;
+    height: auto;
+  }
 }

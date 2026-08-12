@@ -1,4 +1,29 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer-logo {
+  width: 240;
+  height: auto;
+
+  @media (min-width: 992px) {
+    width: 416px;
+    height: auto;
+  }
+}
+
+.footer-bg {
+  background-image: url("../../assets/images/bg_footer_m.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: 992px) {
+    background-image: url("../../assets/images/bg_footer.png");
+    background-size: 1238px 330px;
+    background-position: 0px;
+    background-repeat: no-repeat;
+  }
+}
+
+.sns-logo {
+  display: block;
+  width: 40px;
+  height: 40px;
 }
