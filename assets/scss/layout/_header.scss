@@ -42,3 +42,81 @@
     margin-bottom: -152px;
   }
 }
+
+//navbar向下滾動時，加上背景
+// 1. 定義一個滾動時間軸 (scroll-timeline-name 和 scroll-timeline-axis)
+html {
+  scroll-timeline-name: --my-scroll-progress; /* 給這個時間軸一個名字 */
+  scroll-timeline-axis: block; /* 監聽垂直滾動（Y軸） */
+}
+// 2. 將動畫與滾動時間軸綁定 (animation-timeline)
+.navbar {
+  animation: my-animation forwards; /* 你的 @keyframes 動畫 */
+  animation-timeline: --my-scroll-progress; /* 將動畫綁定到先前定義的滾動時間軸 */
+  /* 3. 定義動畫的觸發範圍 */
+  animation-range: 0px 100px; /* 動畫從 0px 滾動到 300px 後完成 */
+}
+@keyframes my-animation {
+  from {
+    /* 0% 狀態 */
+    background-color: transparent;
+  }
+  to {
+    /* 100% 狀態 */
+    background-color: $neutral-100;
+  }
+}
+
+//畫面向下滾動後，不需要使用背景圖案裝飾線條
+@keyframes navbar-brand-bg-animation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+//桌機版背景圖案裝飾線條
+@media (min-width: 992px) {
+  .navbar-brand::before {
+    content: "";
+    position: absolute;
+    z-index: -1; //顯示在logo下方
+    top: -56px;
+    left: 0;
+    width: 360px;
+    height: 172px;
+    background-color: $neutral-100;
+    border-bottom-right-radius: 40px;
+    animation: navbar-brand-bg-animation forwards;
+    animation-timeline: --my-scroll-progress;
+  }
+  .navbar {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: 40px;
+      bottom: -60px;
+      border-top-left-radius: 40px;
+      box-shadow: -10px -10px 0 5px $neutral-100;
+      animation: navbar-brand-bg-animation forwards;
+      animation-timeline: --my-scroll-progress;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: 360px;
+      top: -16px;
+      border-top-left-radius: 40px;
+      box-shadow: -10px -10px 0 5px $neutral-100;
+      animation: navbar-brand-bg-animation forwards;
+      animation-timeline: --my-scroll-progress;
+    }
+  }
+}

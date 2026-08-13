@@ -1,0 +1,13 @@
+.banner {
+  min-height: 100vh;
+  background-image: url("../images/index-m_Hero-\ Image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 992px) {
+  .banner {
+    background-image: url("../images/index-hero-Image.png");
+  }
+}
