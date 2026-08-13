@@ -1,3 +1,4 @@
+//區域：找到您的夢想家園
 .banner {
   min-height: 100vh;
   background-image: url("../images/index-m_Hero-\ Image.png");
@@ -10,4 +11,174 @@
   .banner {
     background-image: url("../images/index-hero-Image.png");
   }
+}
+
+.banner-text-bg {
+  background-image: url("../images/bg_m.png");
+  background-repeat: no-repeat;
+  background-size: 820px 734px;
+  background-position: -253px bottom;
+  padding-bottom: 45px;
+}
+
+.banner-text {
+  max-width: 320px;
+}
+
+@media (min-width: 992px) {
+  .banner-text-bg {
+    background-image: url("../images/bg.png");
+    background-size: 964px 766px;
+    background-position: -104px bottom;
+    padding-bottom: 168px;
+
+    .banner-text {
+      max-width: 480px;
+    }
+  }
+}
+
+//區域：為什麼選擇我們
+.feature-bg {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: url("../images/display1.png") no-repeat center/contain;
+    width: 176px;
+    height: 138px;
+    top: 20px;
+    left: -36px;
+  }
+}
+
+@media (min-width: 992px) {
+  .feature-bg::before {
+    width: 280px;
+    height: 220px;
+    top: 70px;
+    left: -158px;
+  }
+}
+
+.feature {
+  .icon-bg {
+    width: 64px;
+    height: 64px;
+  }
+  .feature-item {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .col {
+    &:nth-child(1) .feature-item:before {
+      background-image: url("../images/display2.png");
+      top: -51px;
+      bottom: -51px;
+    }
+
+    &:nth-child(2) .feature-item:before {
+      background-image: url("../images/display3.png");
+      top: -48px;
+      bottom: -49px;
+    }
+
+    &:nth-child(3) .feature-item:before {
+      background-image: url("../images/display4.png");
+      top: -32px;
+      bottom: -27px;
+    }
+
+    &:nth-child(4) .feature-item:before {
+      background-image: url("../images/display5.png");
+      top: -24px;
+      bottom: -25px;
+    }
+  }
+  .feature-content {
+    max-width: 279px;
+  }
+}
+
+@media (min-width: 992px) {
+  .feature .col {
+    &:nth-child(1),
+    &:nth-child(2) {
+      .feature-item:before {
+        top: -20px;
+        bottom: -20px;
+        left: -20px;
+        right: -20px;
+      }
+    }
+    &:nth-child(3) {
+      .feature-item:before {
+        top: -25px;
+        bottom: -18px;
+        left: -25px;
+        right: -25px;
+      }
+    }
+    &:nth-child(4) {
+      .feature-item:before {
+        top: -20px;
+        bottom: -20px;
+        left: -20px;
+        right: -20px;
+      }
+    }
+  }
+  .feature-content {
+    max-width: 180px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature .col {
+    &:nth-child(1),
+    &:nth-child(2) {
+      .feature-item:before {
+        top: -35px;
+        bottom: -35px;
+        left: -7px;
+        right: -7px;
+      }
+    }
+    &:nth-child(3) {
+      .feature-item:before {
+        top: -18px;
+        bottom: -12px;
+        left: -7px;
+        right: -7px;
+      }
+    }
+    &:nth-child(4) {
+      .feature-item:before {
+        top: -20px;
+        bottom: -20px;
+        left: -7px;
+        right: -7px;
+      }
+    }
+  }
+  .feature-content {
+    max-width: 242px;
+  }
+}
+
+//精選房源
+.size {
+  width: 100%;
+  height: auto;
 }

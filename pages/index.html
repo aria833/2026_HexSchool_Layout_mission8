@@ -22,11 +22,127 @@
     <%- include('./layout/header'); -%>
 
     <main>
+      <!--找到您的夢想家園-->
       <section class="banner mx-5 rounded-5 m-lg-10 rounded-lg-6">
-        <div class="pt-10">
-          <h1 class="fw-bold fs-xlg fs-lg-xxxlg">找到您的夢想家園</h1>
+        <div class="pt-10 ps-lg-10 pt-lg-20 banner-text-bg">
+          <div class="banner-text">
+            <h1 class="fw-bold fs-1-m fs-lg-1 text-primary-dark mb-6 mb-lg-7">
+              找到您的夢想家園
+            </h1>
+            <p class="fw-bold fs-5-m fs-lg-5">
+              上千筆精選房源、專業預約看房服務、即時房貸試算，讓您輕鬆找到理想住宅
+            </p>
+          </div>
+        </div>
+
+        <!--TODO:選擇表單
+        手機版一般排版，電腦版用絕對定位
+        -->
+      </section>
+
+      <!--為什麼選擇我們-->
+      <section class="container py-11 py-lg-18 feature-bg">
+        <h2 class="fw-bold fs-2-m fs-lg-2 text-primary-dark mb-4 mb-lg-5">
+          為什麼選擇我們
+        </h2>
+        <p class="mb-15 mb-lg-17">專業服務，值得信賴</p>
+        <div class="row row-cols-1 gy-11 feature row-cols-lg-4 g-lg-7">
+          <div class="col">
+            <div
+              class="p-9 d-flex flex-column align-items-center gap-5 text-center feature-item text-white"
+            >
+              <div
+                class="bg-neutral-100 rounded-circle d-flex align-items-center justify-content-center icon-bg"
+              >
+                <span class="material-symbols-outlined fs-4 text-secondary-dark"
+                  >kid_star</span
+                >
+              </div>
+              <p class="fw-bold fs-4-m fs-lg-4">精選物件</p>
+              <p class="feature-content lh-lg">
+                嚴格篩選每一筆房源，確保品質與合法性，讓您安心選購
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="p-9 d-flex flex-column align-items-center gap-5 text-center feature-item text-white"
+            >
+              <div
+                class="bg-neutral-100 rounded-circle d-flex align-items-center justify-content-center icon-bg"
+              >
+                <span class="material-symbols-outlined fs-4 text-secondary-dark"
+                  >group</span
+                >
+              </div>
+              <p class="fw-bold fs-4-m fs-lg-4">專業團隊</p>
+              <p class="feature-content lh-lg">
+                經驗豐富的顧問團隊，提供從看房到成交的全程專業服務
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="p-9 d-flex flex-column align-items-center gap-5 text-center feature-item text-white"
+            >
+              <div
+                class="bg-neutral-100 rounded-circle d-flex align-items-center justify-content-center icon-bg"
+              >
+                <span class="material-symbols-outlined fs-4 text-secondary-dark"
+                  >trending_up</span
+                >
+              </div>
+              <p class="fw-bold fs-4-m fs-lg-4">市場洞察</p>
+              <p class="feature-content lh-lg">
+                即時掌握市場動態，提供最新的房價趨勢與投資分析
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="p-9 d-flex flex-column align-items-center gap-5 text-center feature-item text-white"
+            >
+              <div
+                class="bg-neutral-100 rounded-circle d-flex align-items-center justify-content-center icon-bg"
+              >
+                <span class="material-symbols-outlined fs-4 text-secondary-dark"
+                  >shield</span
+                >
+              </div>
+              <p class="fw-bold fs-4-m fs-lg-4">交易保障</p>
+              <p class="feature-content lh-lg">
+                完整的法律支援與履約保證，保障您的購屋權益
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+      <!--精選房源-->
+      <section>
+        <!--TODO:分左右兩邊，右邊輪播，可參考每日任務-->
+        <div class="d-flex flex-column flex-lg-row py-11 py-lg-17">
+          <div class="mb-5 me-lg-10">
+            <img
+              src="../assets/images/index-img_house.png"
+              alt=""
+              class="size"
+            />
+          </div>
+          <div>
+            <img
+              src="../assets/images/index-img_house1.png"
+              alt=""
+              class="size"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--房貸試算工具-->
+
+      <!--準備好找到您的理想住宅了嗎-->
     </main>
 
     <%- include('./layout/footer'); -%>
