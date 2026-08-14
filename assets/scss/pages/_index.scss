@@ -227,3 +227,119 @@
   width: 100%;
   height: auto;
 }
+
+.house-bg {
+  background:
+    linear-gradient(90deg, rgba(35, 46, 26, 0.2) 0%, rgba(35, 46, 26, 0.7) 80%),
+    url("../images/index-img_house.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  flex-grow: 1;
+}
+
+.px-45 {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.house-badge {
+  right: 16px;
+  bottom: 16px;
+}
+
+@media (min-width: 992px) {
+  .more-house {
+    min-width: 448px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+//精選房源輪播
+//改輪播按鈕樣式
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+  display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: relative;
+  inset: auto;
+  transform: none;
+
+  width: 60px;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $white;
+  background-color: $primary;
+  border-radius: 8px;
+}
+//調整scrollbar跟按鈕位置
+.swiper {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.swiper-footer {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.swiper-scrollbar {
+  position: relative;
+
+  left: auto;
+  right: auto;
+  bottom: auto;
+  top: auto;
+
+  flex: 1;
+  min-width: 0;
+
+  width: auto;
+  margin-right: 16px;
+}
+
+.swiper-nav {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+//房貸試算工具
+.tool-icon-wrap {
+  width: 60px;
+  height: 60px;
+}
+
+@media (min-width: 992px) {
+  .tool-mask {
+    aspect-ratio: 1;
+    background-image: url("../images/img_tool.png");
+    background-attachment: fixed;
+    background-size: auto 100%;
+    background-position: calc(50% - 330px) center;
+    background-repeat: no-repeat;
+
+    mask-image: url("../images/mask.png");
+    mask-size: contain;
+    mask-position: center top;
+    mask-repeat: no-repeat;
+  }
+}

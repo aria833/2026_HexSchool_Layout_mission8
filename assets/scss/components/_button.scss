@@ -1,13 +1,14 @@
 .btn-standard {
   min-height: 48px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
+}
 
-  @media (min-width: 992px) {
-    .btn-stardard {
-      min-width: 200px;
-    }
+@media (min-width: 992px) {
+  .btn-standard {
+    max-width: 200px;
   }
 }
