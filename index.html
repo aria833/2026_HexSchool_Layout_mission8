@@ -17,8 +17,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <script type="module" crossorigin src="/2026_HexSchool_Layout_mission8/assets/index-D9sXVunA.js"></script>
-    <link rel="stylesheet" crossorigin href="/2026_HexSchool_Layout_mission8/assets/index-D6jGtLX3.css">
+    <script type="module" crossorigin src="/2026_HexSchool_Layout_mission8/assets/index-DTbbfxeS.js"></script>
+    <link rel="stylesheet" crossorigin href="/2026_HexSchool_Layout_mission8/assets/index-O_pS8e0r.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top py-lg-5">
@@ -99,22 +99,344 @@
 </nav>
 
     <main>
-      <!--找到您的夢想家園-->
-      <section class="banner mx-5 rounded-5 m-lg-10 rounded-lg-6">
-        <div class="pt-10 ps-lg-10 pt-lg-20 banner-text-bg">
-          <div class="banner-text">
-            <h1 class="fw-bold fs-1-m fs-lg-1 text-primary-dark mb-6 mb-lg-7">
-              找到您的夢想家園
-            </h1>
-            <p class="fw-bold fs-5-m fs-lg-5">
-              上千筆精選房源、專業預約看房服務、即時房貸試算，讓您輕鬆找到理想住宅
-            </p>
+      <section class="position-relative">
+        <!--找到您的夢想家園-->
+        <div class="banner mx-5 rounded-5 m-lg-10 rounded-lg-6">
+          <div class="pt-10 ps-lg-10 pt-lg-20 banner-text-bg">
+            <div class="banner-text">
+              <h1 class="fw-bold fs-1-m fs-lg-1 text-primary-dark mb-6 mb-lg-7">
+                找到您的夢想家園
+              </h1>
+              <p class="fw-bold fs-5-m fs-lg-5">
+                上千筆精選房源、專業預約看房服務、即時房貸試算，讓您輕鬆找到理想住宅
+              </p>
+            </div>
           </div>
         </div>
-
         <!--TODO:選擇表單
         手機版一般排版，電腦版用絕對定位
         -->
+
+        <form
+          action=""
+          class="p-5 pe-lg-10 d-lg-flex hero-search-form mt-5 mt-lg-0 mb-11 mx-5 mx-lg-0 mb-lg-0"
+        >
+          <!--地區-->
+          <div
+            class="d-flex me-2 me-lg-7 align-items-center mb-7 mb-lg-0 flex-lg-column w-100 align-items-lg-start"
+          >
+            <p class="label-width text-primary-dark fs-sm mb-0 mb-lg-2">地區</p>
+            <div class="dropdown flex-grow-1 w-100" id="areaDropdown">
+              <button
+                class="btn border border-neutral-400 rounded-2 w-100 p-4 d-flex justify-content-between align-items-center"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="d-flex align-items-center min-width-0 flex-grow-1">
+                  <span
+                    class="material-symbols-outlined fs-5 me-2 flex-shrink-0"
+                  >
+                    location_on
+                  </span>
+
+                  <span
+                    id="selectedArea"
+                    class="text-light fs-sm text-truncate"
+                  >
+                    請選擇地區
+                  </span>
+                </div>
+
+                <span id="arrowIcon" class="material-symbols-outlined fs-7">
+                  arrow_drop_down
+                </span>
+              </button>
+
+              <ul class="dropdown-menu hero-form w-100 py-4 rounded-2">
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="基隆縣"
+                  >
+                    基隆縣
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="台北市"
+                  >
+                    台北市
+                  </button>
+                </li>
+
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="新北市"
+                  >
+                    新北市
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="桃園市"
+                  >
+                    桃園市
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="新竹市"
+                  >
+                    新竹市
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--房型-->
+          <div
+            class="d-flex me-2 me-lg-7 align-items-center mb-7 mb-lg-0 flex-lg-column w-100 align-items-lg-start"
+          >
+            <p class="label-width text-primary-dark fs-sm mb-0 mb-lg-2">房型</p>
+
+            <div class="dropdown flex-grow-1 w-100" id="areaDropdown">
+              <button
+                class="btn border border-neutral-400 rounded-2 w-100 p-4 d-flex justify-content-between align-items-center"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="d-flex align-items-center min-width-0 flex-grow-1">
+                  <span
+                    class="material-symbols-outlined fs-5 me-2 flex-shrink-0"
+                  >
+                    home
+                  </span>
+
+                  <span
+                    id="selectedArea"
+                    class="text-light fs-sm text-truncate"
+                  >
+                    請選擇房型
+                  </span>
+                </div>
+
+                <span id="arrowIcon" class="material-symbols-outlined fs-7">
+                  arrow_drop_down
+                </span>
+              </button>
+
+              <ul class="dropdown-menu hero-form w-100 py-4 rounded-2">
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="透天"
+                  >
+                    透天
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="公寓"
+                  >
+                    公寓
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="豪宅"
+                  >
+                    豪宅
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="別墅"
+                  >
+                    別墅
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--房間數-->
+          <div
+            class="d-flex me-2 me-lg-7 align-items-center mb-7 mb-lg-0 flex-lg-column w-100 align-items-lg-start"
+          >
+            <p class="label-width text-primary-dark fs-sm mb-0 mb-lg-2">
+              房間數
+            </p>
+
+            <div class="dropdown flex-grow-1 w-100" id="areaDropdown">
+              <button
+                class="btn border border-neutral-400 rounded-2 w-100 p-4 d-flex justify-content-between align-items-center"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="d-flex align-items-center min-width-0 flex-grow-1">
+                  <span
+                    class="material-symbols-outlined fs-5 me-2 flex-shrink-0"
+                  >
+                    king_bed
+                  </span>
+
+                  <span
+                    id="selectedArea"
+                    class="text-light fs-sm text-truncate"
+                  >
+                    請選擇房間數
+                  </span>
+                </div>
+
+                <span id="arrowIcon" class="material-symbols-outlined fs-7">
+                  arrow_drop_down
+                </span>
+              </button>
+
+              <ul class="dropdown-menu hero-form w-100 py-4 rounded-2">
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="1 間"
+                  >
+                    1 間
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="2 間"
+                  >
+                    2 間
+                  </button>
+                </li>
+
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="3 間"
+                  >
+                    3 間
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="4 間"
+                  >
+                    4 間
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--價格-->
+          <div
+            class="d-flex me-2 me-lg-7 align-items-center mb-7 mb-lg-0 flex-lg-column w-100 align-items-lg-start"
+          >
+            <p class="label-width text-primary-dark fs-sm mb-0 mb-lg-2">價格</p>
+
+            <div class="dropdown flex-grow-1 w-100" id="areaDropdown">
+              <button
+                class="btn border border-neutral-400 rounded-2 w-100 p-4 d-flex justify-content-between align-items-center"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="d-flex align-items-center min-width-0 flex-grow-1">
+                  <span
+                    class="material-symbols-outlined fs-5 me-2 flex-shrink-0"
+                  >
+                    attach_money
+                  </span>
+
+                  <span
+                    id="selectedArea"
+                    class="text-light fs-sm text-truncate"
+                  >
+                    請選擇價格區間
+                  </span>
+                </div>
+
+                <span id="arrowIcon" class="material-symbols-outlined fs-7">
+                  arrow_drop_down
+                </span>
+              </button>
+
+              <ul class="dropdown-menu hero-form w-100 py-4 rounded-2">
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="500 萬以下"
+                  >
+                    500 萬以下
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="500 ~ 1,000 萬"
+                  >
+                    500 ~ 1,000 萬
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="1,000 ~ 2,000 萬"
+                  >
+                    1,000 ~ 2,000 萬
+                  </button>
+                </li>
+
+                <li>
+                  <button
+                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
+                    type="button"
+                    data-value="2,000萬以上"
+                  >
+                    2,000萬以上
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--按鈕：搜尋房源-->
+          <div class="w-100 d-flex align-items-end">
+            <button
+              type="submit"
+              class="btn btn-primary fw-bold py-4 w-100 d-flex align-items-center justify-content-center rounded-2"
+            >
+              搜尋房源
+              <span class="material-symbols-outlined ms-2 fs-7"> search </span>
+            </button>
+          </div>
+        </form>
       </section>
 
       <!--為什麼選擇我們-->
@@ -239,7 +561,9 @@
       <!--連結-->
       <div class="row g-6 mb-10">
         <div class="col-6">
-          <a href="#" class="fs-6-m fs-lg-6 fw-bold">好房查詢</a>
+          <a href="#" class="fs-6-m fs-lg-6 fw-bold text-primary-dark"
+            >好房查詢</a
+          >
         </div>
         <div class="col-6">
           <a href="#" class="fs-6-m fs-lg-6 fw-bold">房貸試算</a>
