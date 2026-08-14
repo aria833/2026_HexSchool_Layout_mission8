@@ -331,6 +331,8 @@ $accent: #f26b4d;
 $state-error: #ff4545;
 $state-success: #61d685;
 
+$light: $light !default;
+
 //原有的
 //$primary:       $blue !default;
 //$secondary:     $gray-600 !default;
@@ -375,8 +377,7 @@ $theme-colors: (
   "info": $info,
   "warning": $warning,
   "danger": $danger,
-  //"light":      $light,
-   //"dark":       $dark
+  "light": $light //"dark":       $dark
 ) !default;
 // scss-docs-end theme-colors-map
 

@@ -10,6 +10,17 @@
 @media (min-width: 992px) {
   .banner {
     background-image: url("../images/index-hero-Image.png");
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: 40px;
+      bottom: 105px;
+      border-bottom-left-radius: 40px;
+      box-shadow: -8px 15px 0px 5px $gray-100;
+    }
   }
 }
 
@@ -35,6 +46,40 @@
     .banner-text {
       max-width: 480px;
     }
+  }
+}
+
+.label-width {
+  width: 60px;
+}
+
+.hero-form {
+  max-height: 188px;
+  overflow-y: auto;
+}
+
+.hero-form-btn {
+  &:hover {
+    background-color: $secondary;
+    color: $white;
+  }
+  &:active {
+    background-color: $secondary-dark;
+  }
+}
+
+.min-width-0 {
+  min-width: 0;
+}
+
+.hero-search-form {
+  @media (min-width: 992px) {
+    background-color: $gray-100;
+    border-top-right-radius: 40px;
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    z-index: 10;
   }
 }
 
