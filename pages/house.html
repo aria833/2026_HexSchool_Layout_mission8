@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISHIMA</title>
+
+    <!--Bootstrap Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!--Google icon-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!--Swiper輪播-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--圖片燈箱效果-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main>
+      <!--照片區域-->
+      <section
+        class="mx-5 mt-4 mb-5 rounded-5 m-lg-10 rounded-lg-6 overflow-hidden"
+      >
+        <div class="row flex-column flex-lg-row g-1" id="image-gallery">
+          <div class="col">
+            <a
+              href="../assets/images/detail-Image.png"
+              data-pswp-width="1076"
+              data-pswp-height="605"
+              target="_blank"
+            >
+              <img
+                src="../assets/images/detail-Image.png"
+                alt=""
+                class="w-100"
+              />
+            </a>
+          </div>
+          <div class="col">
+            <div class="row row-cols-lg-2 g-1">
+              <div class="col">
+                <a
+                  href="../assets/images/detail-Image-1.png"
+                  data-pswp-width="1200"
+                  data-pswp-height="800"
+                  target="_blank"
+                >
+                  <img
+                    src="../assets/images/detail-Image-1.png"
+                    alt=""
+                    class="w-100"
+                  />
+                </a>
+              </div>
+              <div class="col">
+                <a
+                  href="../assets/images/detail-Image-2.png"
+                  data-pswp-width="1200"
+                  data-pswp-height="800"
+                  target="_blank"
+                >
+                  <img
+                    src="../assets/images/detail-Image-2.png"
+                    alt=""
+                    class="w-100"
+                  />
+                </a>
+              </div>
+              <div class="col">
+                <a
+                  href="../assets/images/detail-Image-3.png"
+                  data-pswp-width="1200"
+                  data-pswp-height="800"
+                  target="_blank"
+                  ><img
+                    src="../assets/images/detail-Image-3.png"
+                    alt=""
+                    class="w-100"
+                /></a>
+              </div>
+              <div class="col">
+                <div class="position-relative">
+                  <a
+                    href="../assets/images/detail-Image-4.png"
+                    data-pswp-width="1200"
+                    data-pswp-height="800"
+                    target="_blank"
+                    ><img
+                      src="../assets/images/detail-Image-4.png"
+                      alt=""
+                      class="w-100"
+                    /><!--手機版遮罩-->
+                    <div
+                      class="position-absolute w-100 h-100 top-0 start-0 bg-black bg-opacity-50 d-lg-none d-flex justify-content-center align-items-center"
+                    >
+                      <span class="material-symbols-outlined text-white fs-3">
+                        more_horiz
+                      </span>
+                    </div></a
+                  >
+
+                  <!--電腦版按鈕-->
+                  <div
+                    class="position-absolute more-image-button d-none d-lg-block"
+                  >
+                    <a
+                      href="../assets/images/detail-Image-4.png"
+                      data-pswp-width="1200"
+                      data-pswp-height="800"
+                      target="_blank"
+                      class="btn btn-neutral-100 text-primary-dark fw-bold btn-standard rounded-3"
+                      >查看更多照片
+                      <span class="material-symbols-outlined"
+                        >arrow_forward</span
+                      ></a
+                    >
+                    <a
+                      href="../assets/images/detail-Image-3.png"
+                      data-pswp-width="1200"
+                      data-pswp-height="800"
+                      target="_blank"
+                      class="d-none"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--詳細內容-->
+      <section>
+        <div class="container">
+          <div class="row">
+            <!--介紹-->
+            <div class="col-lg-8"></div>
+            <!--預約看房-->
+            <div class="col-lg-4">
+              <div class="p-10 bg-white rounded-6">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-4"
+                >
+                  <p class="fs-lg-5 fs-5-m fw-bold lh-lg">NT$</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p class="fs-lg-3 fs-3-m fw-bold lh-base me-2">1,500</p>
+                    <p class="fs-lg-6 fs-6-m fw-bold lh-lg">萬</p>
+                  </div>
+                </div>
+                <div class="d-flex mb-10">
+                  <span class="material-symbols-outlined fs-5 text-primary">
+                    trending_up
+                  </span>
+                  <p class="ms-1 fs-sm lh-lg">市場平均價格 NT$ 188 萬/坪</p>
+                </div>
+                <button type="button" class="btn btn-primary mb-2 w-100 py-5">
+                  預約看房
+                </button>
+                <p class="fs-sm mb-7">免費參觀，無任何附加條件</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary mb-2 w-100 py-5"
+                >
+                  房貸試算
+                </button>
+                <p class="fs-sm">快速試算每月房貸金額與貸款條件</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--相似房源推薦-->
+      <section class="pt-18 pb-19">
+        <div class="container">
+          <h2 class="fs-lg-2 fs-2-m fw-bold lh-base mb-13 text-primary-dark">
+            相似房源推薦
+          </h2>
+          <div class="row g-5">
+            <div class="col-lg-4">
+              <a href="#">
+                <div class="position-relative mb-5">
+                  <img
+                    src="../assets/images/search-house1.png"
+                    alt=""
+                    class="rounded-5"
+                  />
+                  <p
+                    class="bg-neutral-0 lh-lg py-1 px-6 rounded-pill position-absolute house-badge"
+                  >
+                    別墅
+                  </p>
+                </div>
+
+                <div class="px-2">
+                  <div class="d-flex justify-content-between mb-4">
+                    <h5 class="fs-5-m fs-lg-5 text-dark">景觀別墅</h5>
+                    <div class="d-flex align-items-center">
+                      <span class="material-symbols-outlined fs-6-m fs-lg-6">
+                        location_on
+                      </span>
+                      <p class="fs-sm lh-lg">台北市信義區</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-7">
+                    <h5 class="fs-lg-5 fs-5-m me-4 lh-lg">NT$</h5>
+                    <h3 class="fs-lg-3 fs-3-m me-4 lh-base text-primary-dark">
+                      1,500
+                    </h3>
+                    <h5 class="fs-lg-5 fs-5-m lh-lg">萬</h5>
+                  </div>
+                  <div class="d-flex">
+                    <div
+                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
+                    >
+                      <span class="material-symbols-outlined fs-4 me-2">
+                        king_bed
+                      </span>
+                      <p class="text-primary-dark">3</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
+                    >
+                      <span class="material-symbols-outlined fs-4 me-2">
+                        shower
+                      </span>
+                      <p class="text-primary-dark">2</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2 flex-shrink-0"
+                    >
+                      <span class="material-symbols-outlined fs-4 me-2">
+                        check_box_outline_blank
+                      </span>
+                      <p class="text-primary-dark">45坪</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4">
+              <a href="#">
+                <div class="position-relative mb-5">
+                  <img
+                    src="../assets/images/search-house3.png"
+                    alt=""
+                    class="rounded-5"
+                  />
+                  <p
+                    class="bg-neutral-0 lh-lg py-1 px-6 rounded-pill position-absolute house-badge"
+                  >
+                    豪宅
+                  </p>
+                </div>
+
+                <div class="px-2">
+                  <div class="d-flex justify-content-between mb-4">
+                    <h5 class="fs-5-m fs-lg-5 text-dark">景觀別墅</h5>
+                    <div class="d-flex align-items-center">
+                      <span class="material-symbols-outlined fs-6-m fs-lg-6">
+                        location_on
+                      </span>
+                      <p class="fs-sm lh-lg">台北市信義區</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-7">
+                    <h5 class="fs-lg-5 fs-5-m me-4 lh-lg">NT$</h5>
+                    <h3 class="fs-lg-3 fs-3-m me-4 lh-base text-primary-dark">
+                      1,500
+                    </h3>
+                    <h5 class="fs-lg-5 fs-5-m lh-lg">萬</h5>
+                  </div>
+                  <div class="d-flex">
+                    <div
+                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
+                    >
+                      <span class="material-symbols-outlined fs-4 me-2">
+                        king_bed
+                      </span>
+                      <p class="text-primary-dark">3</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
+                    >
+                      <span class="material-symbols-outlined fs-4 me-2">
+                        shower
+                      </span>
+                      <p class="text-primary-dark">2</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2 flex-shrink-0"
+                    >
+                      <span class="material-symbols-outlined fs-4 me-2">
+                        check_box_outline_blank
+                      </span>
+                      <p class="text-primary-dark">80坪</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4">
+              <a href="#">
+                <div class="position-relative mb-5">
+                  <img
+                    src="../assets/images/search-house2.png"
+                    alt=""
+                    class="rounded-5"
+                  />
+                  <p
+                    class="bg-neutral-0 lh-lg py-1 px-6 rounded-pill position-absolute house-badge"
+                  >
+                    透天
+                  </p>
+                </div>
+
+                <div class="px-2">
+                  <div class="d-flex justify-content-between mb-4">
+                    <h5 class="fs-5-m fs-lg-5 text-dark">溫馨透天</h5>
+                    <div class="d-flex align-items-center">
+                      <span class="material-symbols-outlined fs-6-m fs-lg-6">
+                        location_on
+                      </span>
+                      <p class="fs-sm lh-lg">台北市信義區</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-7">
+                    <h5 class="fs-lg-5 fs-5-m me-4 lh-lg">NT$</h5>
+                    <h3 class="fs-lg-3 fs-3-m me-4 lh-base text-primary-dark">
+                      2,500
+                    </h3>
+                    <h5 class="fs-lg-5 fs-5-m lh-lg">萬</h5>
+                  </div>
+                  <div class="d-flex">
+                    <div
+                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
+                    >
+                      <span class="material-symbols-outlined fs-4 me-2">
+                        king_bed
+                      </span>
+                      <p class="text-primary-dark">3</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
+                    >
+                      <span class="material-symbols-outlined fs-4 me-2">
+                        shower
+                      </span>
+                      <p class="text-primary-dark">3</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2 flex-shrink-0"
+                    >
+                      <span class="material-symbols-outlined fs-4 me-2">
+                        check_box_outline_blank
+                      </span>
+                      <p class="text-primary-dark">60坪</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
