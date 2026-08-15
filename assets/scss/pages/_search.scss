@@ -45,3 +45,15 @@
 .search-bg {
   background-color: rgba(249, 249, 249, 0.8);
 }
+
+//頁碼
+.search-page {
+  &:hover,
+  &:active {
+    color: $secondary;
+  }
+
+  &.active {
+    color: $secondary;
+  }
+}
