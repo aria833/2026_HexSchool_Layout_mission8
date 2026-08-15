@@ -1,5 +1,4 @@
-//區域：找到您的夢想家園
-
+//標題、背景區域
 .search-m-bg {
   width: 100%;
   height: auto;
@@ -21,4 +20,24 @@
 
 .calculate-bg {
   background-color: rgba(249, 249, 249, 0.8);
+}
+
+//手風琴符號變更
+.accordion-button {
+  //收合狀態
+  &::after {
+    background-image: unset;
+    font-family: "Material Symbols Outlined";
+    line-height: 1;
+    content: "add";
+    font-size: 40px;
+    width: 40px;
+    height: auto;
+    margin-left: 4px;
+  }
+  //展開狀態
+  &:not(.collapsed)::after {
+    background-image: unset;
+    content: "remove";
+  }
 }

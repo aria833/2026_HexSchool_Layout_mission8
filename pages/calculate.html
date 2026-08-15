@@ -28,6 +28,7 @@
     <%- include('./layout/header'); -%>
 
     <main>
+      <!--標題、背景-->
       <section class="position-relative">
         <!--手機版-->
         <div class="px-5 d-lg-none">
@@ -58,6 +59,49 @@
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      <!--表格-->
+      <section class="container">
+        <div class="row">
+          <!--手風琴-->
+          <div class="col-lg-8">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button bg-white shadow-none p-10 fw-bold fs-3-m fs-lg-3 text-primary-dark"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    房貸試算
+                  </button>
+                </h3>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-10 pt-0">
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---->
         </div>
       </section>
     </main>
