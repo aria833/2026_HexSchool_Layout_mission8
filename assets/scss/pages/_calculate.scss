@@ -22,6 +22,13 @@
   background-color: rgba(249, 249, 249, 0.8);
 }
 
+//表單右上角裝飾
+.cal {
+  background-image: url("../images/display.png");
+  background-repeat: no-repeat;
+  background-position: right -31px top -65px;
+}
+
 //手風琴符號變更
 .accordion-button {
   //收合狀態
@@ -33,11 +40,77 @@
     font-size: 40px;
     width: 40px;
     height: auto;
+  }
+  //展開狀態
+  &:not(.collapsed)::after {
+    background-image: unset;
+    content: "remove";
+  }
+}
+
+.cal-result {
+  //收合狀態
+  &::after {
+    background-image: unset;
+    font-family: "Material Symbols Outlined";
+    line-height: 1;
+    content: "add";
+    font-size: 20px;
+    width: 24px;
+    height: auto;
     margin-left: 4px;
   }
   //展開狀態
   &:not(.collapsed)::after {
     background-image: unset;
     content: "remove";
+  }
+}
+
+.accordion {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.calculate-input::placeholder {
+  color: $light;
+}
+
+.rounded-tab-10 {
+  border-radius: 10px;
+}
+
+.mobile-calculate-btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 16px 20px;
+  background-color: $primary;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+
+  &.is-hidden {
+    display: none;
+  }
+}
+
+.table {
+  thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  tbody {
+    display: block;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+
+  tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
   }
 }
