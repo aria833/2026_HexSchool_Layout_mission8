@@ -1,0 +1,24 @@
+//區域：找到您的夢想家園
+
+.search-m-bg {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .calculate {
+    background-image: url("../images/cal-Hero-Image.png");
+    height: 520px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.calculate-text {
+  max-width: 538px;
+}
+
+.calculate-bg {
+  background-color: rgba(249, 249, 249, 0.8);
+}
