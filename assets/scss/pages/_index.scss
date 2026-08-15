@@ -10,16 +10,28 @@
 @media (min-width: 992px) {
   .banner {
     background-image: url("../images/index-hero-Image.png");
+  }
 
+  .hero-search-form {
     &::before {
       content: "";
       position: absolute;
       width: 40px;
       height: 40px;
-      left: 40px;
-      bottom: 105px;
+      left: -4px;
+      bottom: 107px;
       border-bottom-left-radius: 40px;
-      box-shadow: -8px 15px 0px 5px $gray-100;
+      box-shadow: -8px 15px 0px 2px $gray-100;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      right: -38px;
+      bottom: 0;
+      border-bottom-left-radius: 40px;
+      box-shadow: -8px 15px 0px 2px $gray-100;
     }
   }
 }
@@ -103,7 +115,7 @@
     width: 280px;
     height: 220px;
     top: 70px;
-    left: -158px;
+    left: -122px;
   }
 }
 

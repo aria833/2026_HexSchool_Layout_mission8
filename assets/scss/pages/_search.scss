@@ -1,0 +1,47 @@
+//區域：找到您的夢想家園
+
+.search-m-bg {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .search {
+    background-image: url("../images/search-hero-Image.png");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-search-form {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: -4px;
+      bottom: 107px;
+      border-bottom-left-radius: 40px;
+      box-shadow: -8px 15px 0px 2px $gray-100;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      right: -38px;
+      bottom: 0;
+      border-bottom-left-radius: 40px;
+      box-shadow: -8px 15px 0px 2px $gray-100;
+    }
+  }
+}
+
+.search-text {
+  max-width: 538px;
+}
+
+.search-bg {
+  background-color: rgba(249, 249, 249, 0.8);
+}
