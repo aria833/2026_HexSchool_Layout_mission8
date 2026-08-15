@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>找到 5 筆房源 | ISHIMA</title>
+    <title>ISHIMA</title>
 
     <!--Bootstrap Icon-->
     <link
@@ -22,6 +22,12 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--圖片燈箱效果-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.min.css"
+      rel="stylesheet"
     />
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js"></script>
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.min.js"></script>
@@ -109,367 +115,230 @@
 </nav>
 
     <main>
-      <!--好房搜尋-->
-      <section class="position-relative">
-        <!--手機版-->
-        <div class="px-5 d-lg-none">
-          <img
-            src="/2026_HexSchool_Layout_mission8/assets/search-hero-image-B4nK2EI9.png"
-            alt=""
-            class="search-m-bg rounded-5 mt-4 mb-5"
-          />
-          <div class="p-5 mb-5">
-            <h1 class="fs-1 fw-bold mb-4 text-primary-dark">好房查詢</h1>
-            <p class="fs-5-m fw-bold lh-lg">
-              上千筆精選房源、專業預約看房服務、即時房貸試算，讓您輕鬆找到理想住宅
-            </p>
-          </div>
-        </div>
-
-        <!--標語-->
-        <div class="search mx-5 rounded-5 m-lg-10 rounded-lg-6">
-          <div class="ps-lg-10 pt-lg-20">
-            <div
-              class="search-text p-lg-10 rounded-6 search-bg d-none d-lg-block"
+      <!--照片區域-->
+      <section
+        class="mx-5 mt-4 mb-5 rounded-5 m-lg-10 rounded-lg-6 overflow-hidden"
+      >
+        <div class="row flex-column flex-lg-row g-1" id="image-gallery">
+          <div class="col">
+            <a
+              href="../assets/images/detail-Image.png"
+              data-pswp-width="1076"
+              data-pswp-height="605"
+              target="_blank"
             >
-              <h1 class="fw-bold fs-1-m fs-lg-1 text-primary-dark mb-6 mb-lg-7">
-                好房查詢
-              </h1>
-              <p class="fw-bold fs-5-m fs-lg-5 lh-lg">
-                上千筆精選房源、專業預約看房服務、即時房貸試算，讓您輕鬆找到理想住宅
-              </p>
+              <img
+                src="/2026_HexSchool_Layout_mission8/assets/detail-Image-DF0lFfLN.png"
+                alt=""
+                class="w-100"
+              />
+            </a>
+          </div>
+          <div class="col">
+            <div class="row row-cols-lg-2 g-1">
+              <div class="col">
+                <a
+                  href="../assets/images/detail-Image-1.png"
+                  data-pswp-width="1200"
+                  data-pswp-height="800"
+                  target="_blank"
+                >
+                  <img
+                    src="/2026_HexSchool_Layout_mission8/assets/detail-Image-1-DztQ7Bze.png"
+                    alt=""
+                    class="w-100"
+                  />
+                </a>
+              </div>
+              <div class="col">
+                <a
+                  href="../assets/images/detail-Image-2.png"
+                  data-pswp-width="1200"
+                  data-pswp-height="800"
+                  target="_blank"
+                >
+                  <img
+                    src="/2026_HexSchool_Layout_mission8/assets/detail-Image-2-WmAz6ZDg.png"
+                    alt=""
+                    class="w-100"
+                  />
+                </a>
+              </div>
+              <div class="col">
+                <a
+                  href="../assets/images/detail-Image-3.png"
+                  data-pswp-width="1200"
+                  data-pswp-height="800"
+                  target="_blank"
+                  ><img
+                    src="/2026_HexSchool_Layout_mission8/assets/detail-Image-3-BXpWsDAl.png"
+                    alt=""
+                    class="w-100"
+                /></a>
+              </div>
+              <div class="col">
+                <div class="position-relative">
+                  <a
+                    href="../assets/images/detail-Image-4.png"
+                    data-pswp-width="1200"
+                    data-pswp-height="800"
+                    target="_blank"
+                    ><img
+                      src="/2026_HexSchool_Layout_mission8/assets/detail-Image-4-BYnLcPB1.png"
+                      alt=""
+                      class="w-100"
+                    /><!--手機版遮罩-->
+                    <div
+                      class="position-absolute w-100 h-100 top-0 start-0 bg-black bg-opacity-50 d-lg-none d-flex justify-content-center align-items-center"
+                    >
+                      <span class="material-symbols-outlined text-white fs-3">
+                        more_horiz
+                      </span>
+                    </div></a
+                  >
+
+                  <!--電腦版按鈕-->
+                  <div
+                    class="position-absolute more-image-button d-none d-lg-block"
+                  >
+                    <a
+                      href="../assets/images/detail-Image-4.png"
+                      data-pswp-width="1200"
+                      data-pswp-height="800"
+                      target="_blank"
+                      class="btn btn-neutral-100 text-primary-dark fw-bold btn-standard rounded-3"
+                      >查看更多照片
+                      <span class="material-symbols-outlined"
+                        >arrow_forward</span
+                      ></a
+                    >
+                    <a
+                      href="../assets/images/detail-Image-3.png"
+                      data-pswp-width="1200"
+                      data-pswp-height="800"
+                      target="_blank"
+                      class="d-none"
+                    ></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!--表單-->
-        <form
-          action=""
-          class="p-5 pe-lg-10 d-lg-flex hero-search-form mt-5 mt-lg-0 mb-11 mx-5 mx-lg-0 mb-lg-0"
-        >
-          <!--地區-->
-          <div
-            class="d-flex me-2 me-lg-7 align-items-center mb-7 mb-lg-0 flex-lg-column w-100 align-items-lg-start"
-          >
-            <p class="label-width text-primary-dark fs-sm mb-0 mb-lg-2">地區</p>
-            <div class="dropdown flex-grow-1 w-100" id="areaDropdown">
-              <button
-                class="btn border border-neutral-400 rounded-2 w-100 p-4 d-flex justify-content-between align-items-center"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <div class="d-flex align-items-center min-width-0 flex-grow-1">
-                  <span
-                    class="material-symbols-outlined fs-5 me-2 flex-shrink-0"
-                  >
-                    location_on
-                  </span>
+      </section>
 
-                  <span id="selectedArea" class="text-dark fs-sm text-truncate">
-                    台北市
-                  </span>
+      <!--詳細內容-->
+      <section>
+        <div class="container">
+          <div class="row">
+            <!--介紹-->
+            <div class="col-lg-8"></div>
+            <!--預約看房-->
+            <div class="col-lg-4">
+              <div class="p-10 bg-white rounded-6">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-4"
+                >
+                  <p class="fs-lg-5 fs-5-m fw-bold lh-lg">NT$</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p class="fs-lg-3 fs-3-m fw-bold lh-base me-2">1,500</p>
+                    <p class="fs-lg-6 fs-6-m fw-bold lh-lg">萬</p>
+                  </div>
                 </div>
-
-                <span id="arrowIcon" class="material-symbols-outlined fs-7">
-                  arrow_drop_down
-                </span>
-              </button>
-
-              <ul class="dropdown-menu hero-form w-100 py-4 rounded-2">
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="基隆縣"
-                  >
-                    基隆縣
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="台北市"
-                    selected
-                  >
-                    台北市
-                  </button>
-                </li>
-
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="新北市"
-                  >
-                    新北市
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="桃園市"
-                  >
-                    桃園市
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="新竹市"
-                  >
-                    新竹市
-                  </button>
-                </li>
-              </ul>
+                <div class="d-flex mb-10">
+                  <span class="material-symbols-outlined fs-5 text-primary">
+                    trending_up
+                  </span>
+                  <p class="ms-1 fs-sm lh-lg">市場平均價格 NT$ 188 萬/坪</p>
+                </div>
+                <button type="button" class="btn btn-primary mb-2 w-100 py-5">
+                  預約看房
+                </button>
+                <p class="fs-sm mb-7">免費參觀，無任何附加條件</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary mb-2 w-100 py-5"
+                >
+                  房貸試算
+                </button>
+                <p class="fs-sm">快速試算每月房貸金額與貸款條件</p>
+              </div>
             </div>
           </div>
-          <!--房型-->
-          <div
-            class="d-flex me-2 me-lg-7 align-items-center mb-7 mb-lg-0 flex-lg-column w-100 align-items-lg-start"
-          >
-            <p class="label-width text-primary-dark fs-sm mb-0 mb-lg-2">房型</p>
+        </div>
+      </section>
 
-            <div class="dropdown flex-grow-1 w-100" id="areaDropdown">
-              <button
-                class="btn border border-neutral-400 rounded-2 w-100 p-4 d-flex justify-content-between align-items-center"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <div class="d-flex align-items-center min-width-0 flex-grow-1">
-                  <span
-                    class="material-symbols-outlined fs-5 me-2 flex-shrink-0"
-                  >
-                    home
-                  </span>
-
-                  <span id="selectedArea" class="text-dark fs-sm text-truncate">
-                    豪宅
-                  </span>
-                </div>
-
-                <span id="arrowIcon" class="material-symbols-outlined fs-7">
-                  arrow_drop_down
-                </span>
-              </button>
-
-              <ul class="dropdown-menu hero-form w-100 py-4 rounded-2">
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="透天"
-                  >
-                    透天
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="公寓"
-                  >
-                    公寓
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="豪宅"
-                  >
-                    豪宅
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="別墅"
+      <!--相似房源推薦-->
+      <section class="pt-18 pb-19">
+        <div class="container">
+          <h2 class="fs-lg-2 fs-2-m fw-bold lh-base mb-13 text-primary-dark">
+            相似房源推薦
+          </h2>
+          <div class="row g-5">
+            <div class="col-lg-4">
+              <a href="#">
+                <div class="position-relative mb-5">
+                  <img
+                    src="/2026_HexSchool_Layout_mission8/assets/search-house1-BLw1m9FQ.png"
+                    alt=""
+                    class="rounded-5"
+                  />
+                  <p
+                    class="bg-neutral-0 lh-lg py-1 px-6 rounded-pill position-absolute house-badge"
                   >
                     別墅
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--房間數-->
-          <div
-            class="d-flex me-2 me-lg-7 align-items-center mb-7 mb-lg-0 flex-lg-column w-100 align-items-lg-start"
-          >
-            <p class="label-width text-primary-dark fs-sm mb-0 mb-lg-2">
-              房間數
-            </p>
-
-            <div class="dropdown flex-grow-1 w-100" id="areaDropdown">
-              <button
-                class="btn border border-neutral-400 rounded-2 w-100 p-4 d-flex justify-content-between align-items-center"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <div class="d-flex align-items-center min-width-0 flex-grow-1">
-                  <span
-                    class="material-symbols-outlined fs-5 me-2 flex-shrink-0"
-                  >
-                    king_bed
-                  </span>
-
-                  <span id="selectedArea" class="text-dark fs-sm text-truncate">
-                    3 間
-                  </span>
+                  </p>
                 </div>
 
-                <span id="arrowIcon" class="material-symbols-outlined fs-7">
-                  arrow_drop_down
-                </span>
-              </button>
-
-              <ul class="dropdown-menu hero-form w-100 py-4 rounded-2">
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="1 間"
-                  >
-                    1 間
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="2 間"
-                  >
-                    2 間
-                  </button>
-                </li>
-
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="3 間"
-                  >
-                    3 間
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="4 間"
-                  >
-                    4 間
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--價格-->
-          <div
-            class="d-flex me-2 me-lg-7 align-items-center mb-7 mb-lg-0 flex-lg-column w-100 align-items-lg-start"
-          >
-            <p class="label-width text-primary-dark fs-sm mb-0 mb-lg-2">價格</p>
-
-            <div class="dropdown flex-grow-1 w-100" id="areaDropdown">
-              <button
-                class="btn border border-neutral-400 rounded-2 w-100 p-4 d-flex justify-content-between align-items-center"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <div class="d-flex align-items-center min-width-0 flex-grow-1">
-                  <span
-                    class="material-symbols-outlined fs-5 me-2 flex-shrink-0"
-                  >
-                    attach_money
-                  </span>
-
-                  <span id="selectedArea" class="text-dark fs-sm text-truncate">
-                    2,000 萬以上
-                  </span>
+                <div class="px-2">
+                  <div class="d-flex justify-content-between mb-4">
+                    <h5 class="fs-5-m fs-lg-5 text-dark">景觀別墅</h5>
+                    <div class="d-flex align-items-center">
+                      <span class="material-symbols-outlined fs-6-m fs-lg-6">
+                        location_on
+                      </span>
+                      <p class="fs-sm lh-lg">台北市信義區</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-7">
+                    <h5 class="fs-lg-5 fs-5-m me-4 lh-lg">NT$</h5>
+                    <h3 class="fs-lg-3 fs-3-m me-4 lh-base text-primary-dark">
+                      1,500
+                    </h3>
+                    <h5 class="fs-lg-5 fs-5-m lh-lg">萬</h5>
+                  </div>
+                  <div class="d-flex">
+                    <div
+                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
+                    >
+                      <span class="material-symbols-outlined fs-4 me-2">
+                        king_bed
+                      </span>
+                      <p class="text-primary-dark">3</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
+                    >
+                      <span class="material-symbols-outlined fs-4 me-2">
+                        shower
+                      </span>
+                      <p class="text-primary-dark">2</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2 flex-shrink-0"
+                    >
+                      <span class="material-symbols-outlined fs-4 me-2">
+                        check_box_outline_blank
+                      </span>
+                      <p class="text-primary-dark">45坪</p>
+                    </div>
+                  </div>
                 </div>
-
-                <span id="arrowIcon" class="material-symbols-outlined fs-7">
-                  arrow_drop_down
-                </span>
-              </button>
-
-              <ul class="dropdown-menu hero-form w-100 py-4 rounded-2">
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="500 萬以下"
-                  >
-                    500 萬以下
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="500 ~ 1,000 萬"
-                  >
-                    500 ~ 1,000 萬
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="1,000 ~ 2,000 萬"
-                  >
-                    1,000 ~ 2,000 萬
-                  </button>
-                </li>
-
-                <li>
-                  <button
-                    class="dropdown-item ps-10 py-2 btn hero-form-btn"
-                    type="button"
-                    data-value="2,000萬以上"
-                  >
-                    2,000萬以上
-                  </button>
-                </li>
-              </ul>
+              </a>
             </div>
-          </div>
-          <!--按鈕：搜尋房源-->
-          <div class="w-100 d-flex align-items-end">
-            <button
-              type="submit"
-              class="btn btn-primary fw-bold py-4 w-100 d-flex align-items-center justify-content-center rounded-2"
-            >
-              搜尋房源
-              <span class="material-symbols-outlined ms-2 fs-7"> search </span>
-            </button>
-          </div>
-        </form>
-      </section>
-      <!--精選房源-->
-      <section class="py-11 py-lg-18 feature-bg">
-        <div class="container">
-          <!--標題-->
-          <div
-            class="d-lg-flex align-items-end justify-content-between mb-13 mb-lg-15"
-          >
-            <div class="mb-10 mb-lg-0">
-              <h2 class="fw-bold fs-2-m fs-lg-2 text-primary-dark mb-4 mb-lg-5">
-                找到 5 筆房源
-              </h2>
-              <p>為您精選最符合需求的優質物件</p>
-            </div>
-          </div>
-
-          <div class="row gx-lg-7 gy-lg-13 gy-10">
-            <!--房源卡片-->
-            <div class="col-lg-6 col-xl-4">
+            <div class="col-lg-4">
               <a href="#">
                 <div class="position-relative mb-5">
                   <img
@@ -486,7 +355,7 @@
 
                 <div class="px-2">
                   <div class="d-flex justify-content-between mb-4">
-                    <h5 class="fs-5-m fs-lg-5 text-dark">天境御邸</h5>
+                    <h5 class="fs-5-m fs-lg-5 text-dark">景觀別墅</h5>
                     <div class="d-flex align-items-center">
                       <span class="material-symbols-outlined fs-6-m fs-lg-6">
                         location_on
@@ -530,146 +399,24 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-6 col-xl-4">
+            <div class="col-lg-4">
               <a href="#">
                 <div class="position-relative mb-5">
                   <img
-                    src="/2026_HexSchool_Layout_mission8/assets/search-house4-B0GTZ_f1.png"
+                    src="/2026_HexSchool_Layout_mission8/assets/search-house2-COa3W3mY.png"
                     alt=""
                     class="rounded-5"
                   />
                   <p
                     class="bg-neutral-0 lh-lg py-1 px-6 rounded-pill position-absolute house-badge"
                   >
-                    豪宅
+                    透天
                   </p>
                 </div>
 
                 <div class="px-2">
                   <div class="d-flex justify-content-between mb-4">
-                    <h5 class="fs-5-m fs-lg-5 text-dark">御山景苑</h5>
-                    <div class="d-flex align-items-center">
-                      <span class="material-symbols-outlined fs-6-m fs-lg-6">
-                        location_on
-                      </span>
-                      <p class="fs-sm lh-lg">台北市信義區</p>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center mb-7">
-                    <h5 class="fs-lg-5 fs-5-m me-4 lh-lg">NT$</h5>
-                    <h3 class="fs-lg-3 fs-3-m me-4 lh-base text-primary-dark">
-                      1,200
-                    </h3>
-                    <h5 class="fs-lg-5 fs-5-m lh-lg">萬</h5>
-                  </div>
-                  <div class="d-flex">
-                    <div
-                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
-                    >
-                      <span class="material-symbols-outlined fs-4 me-2">
-                        king_bed
-                      </span>
-                      <p class="text-primary-dark">3</p>
-                    </div>
-                    <div
-                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
-                    >
-                      <span class="material-symbols-outlined fs-4 me-2">
-                        shower
-                      </span>
-                      <p class="text-primary-dark">2</p>
-                    </div>
-                    <div
-                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2 flex-shrink-0"
-                    >
-                      <span class="material-symbols-outlined fs-4 me-2">
-                        check_box_outline_blank
-                      </span>
-                      <p class="text-primary-dark">85坪</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-6 col-xl-4">
-              <a href="#">
-                <div class="position-relative mb-5">
-                  <img
-                    src="/2026_HexSchool_Layout_mission8/assets/search-house6-qZyizQ9l.png"
-                    alt=""
-                    class="rounded-5"
-                  />
-                  <p
-                    class="bg-neutral-0 lh-lg py-1 px-6 rounded-pill position-absolute house-badge"
-                  >
-                    豪宅
-                  </p>
-                </div>
-
-                <div class="px-2">
-                  <div class="d-flex justify-content-between mb-4">
-                    <h5 class="fs-5-m fs-lg-5 text-dark">山嵐御墅</h5>
-                    <div class="d-flex align-items-center">
-                      <span class="material-symbols-outlined fs-6-m fs-lg-6">
-                        location_on
-                      </span>
-                      <p class="fs-sm lh-lg">台北市信義區</p>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center mb-7">
-                    <h5 class="fs-lg-5 fs-5-m me-4 lh-lg">NT$</h5>
-                    <h3 class="fs-lg-3 fs-3-m me-4 lh-base text-primary-dark">
-                      1,000
-                    </h3>
-                    <h5 class="fs-lg-5 fs-5-m lh-lg">萬</h5>
-                  </div>
-                  <div class="d-flex">
-                    <div
-                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
-                    >
-                      <span class="material-symbols-outlined fs-4 me-2">
-                        king_bed
-                      </span>
-                      <p class="text-primary-dark">3</p>
-                    </div>
-                    <div
-                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
-                    >
-                      <span class="material-symbols-outlined fs-4 me-2">
-                        shower
-                      </span>
-                      <p class="text-primary-dark">2</p>
-                    </div>
-                    <div
-                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2 flex-shrink-0"
-                    >
-                      <span class="material-symbols-outlined fs-4 me-2">
-                        check_box_outline_blank
-                      </span>
-                      <p class="text-primary-dark">90坪</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-6 col-xl-4">
-              <a href="#">
-                <div class="position-relative mb-5">
-                  <img
-                    src="/2026_HexSchool_Layout_mission8/assets/search-house8-CZzo7Krs.png"
-                    alt=""
-                    class="rounded-5"
-                  />
-                  <p
-                    class="bg-neutral-0 lh-lg py-1 px-6 rounded-pill position-absolute house-badge"
-                  >
-                    豪宅
-                  </p>
-                </div>
-
-                <div class="px-2">
-                  <div class="d-flex justify-content-between mb-4">
-                    <h5 class="fs-5-m fs-lg-5 text-dark">觀山大境</h5>
+                    <h5 class="fs-5-m fs-lg-5 text-dark">溫馨透天</h5>
                     <div class="d-flex align-items-center">
                       <span class="material-symbols-outlined fs-6-m fs-lg-6">
                         location_on
@@ -699,76 +446,15 @@
                       <span class="material-symbols-outlined fs-4 me-2">
                         shower
                       </span>
-                      <p class="text-primary-dark">2</p>
-                    </div>
-                    <div
-                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2 flex-shrink-0"
-                    >
-                      <span class="material-symbols-outlined fs-4 me-2">
-                        check_box_outline_blank
-                      </span>
-                      <p class="text-primary-dark">100坪</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-6 col-xl-4">
-              <a href="#">
-                <div class="position-relative mb-5">
-                  <img
-                    src="/2026_HexSchool_Layout_mission8/assets/search-house9-CiqMWYyL.png"
-                    alt=""
-                    class="rounded-5"
-                  />
-                  <p
-                    class="bg-neutral-0 lh-lg py-1 px-6 rounded-pill position-absolute house-badge"
-                  >
-                    公寓
-                  </p>
-                </div>
-
-                <div class="px-2">
-                  <div class="d-flex justify-content-between mb-4">
-                    <h5 class="fs-5-m fs-lg-5 text-dark">現代豪華公寓</h5>
-                    <div class="d-flex align-items-center">
-                      <span class="material-symbols-outlined fs-6-m fs-lg-6">
-                        location_on
-                      </span>
-                      <p class="fs-sm lh-lg">台北市信義區</p>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center mb-7">
-                    <h5 class="fs-lg-5 fs-5-m me-4 lh-lg">NT$</h5>
-                    <h3 class="fs-lg-3 fs-3-m me-4 lh-base text-primary-dark">
-                      1,500
-                    </h3>
-                    <h5 class="fs-lg-5 fs-5-m lh-lg">萬</h5>
-                  </div>
-                  <div class="d-flex">
-                    <div
-                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
-                    >
-                      <span class="material-symbols-outlined fs-4 me-2">
-                        king_bed
-                      </span>
                       <p class="text-primary-dark">3</p>
                     </div>
                     <div
-                      class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
-                    >
-                      <span class="material-symbols-outlined fs-4 me-2">
-                        shower
-                      </span>
-                      <p class="text-primary-dark">2</p>
-                    </div>
-                    <div
                       class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2 flex-shrink-0"
                     >
                       <span class="material-symbols-outlined fs-4 me-2">
                         check_box_outline_blank
                       </span>
-                      <p class="text-primary-dark">45坪</p>
+                      <p class="text-primary-dark">60坪</p>
                     </div>
                   </div>
                 </div>
