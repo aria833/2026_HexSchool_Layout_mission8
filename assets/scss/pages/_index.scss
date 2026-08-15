@@ -343,3 +343,33 @@
     mask-repeat: no-repeat;
   }
 }
+
+//準備好找到您的理想住宅了嗎
+
+@media (min-width: 992px) {
+  .ideal-bg {
+    background-image: url("../images/stone.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .tool-mask2 {
+    aspect-ratio: 1;
+    background-image: url("../images/img_tool2.png");
+    background-attachment: fixed;
+    background-size: auto 100%;
+    background-position: calc(50% - 330px) center;
+    background-repeat: no-repeat;
+
+    mask-image: url("../images/mask2.png");
+    mask-size: contain;
+    mask-position: center top;
+    mask-repeat: no-repeat;
+  }
+
+  .py-lg-220 {
+    padding-top: 220px;
+    padding-bottom: 220px;
+  }
+}

@@ -1,8 +1,10 @@
 .footer-logo {
   width: 240;
   height: auto;
+}
 
-  @media (min-width: 992px) {
+@media (min-width: 992px) {
+  .footer-logo {
     width: 416px;
     height: auto;
   }
@@ -11,10 +13,12 @@
 .footer-bg {
   background-image: url("../../assets/images/bg_footer_m.png");
   background-size: cover;
-  background-position: center;
+  background-position: center 88px;
   background-repeat: no-repeat;
+}
 
-  @media (min-width: 992px) {
+@media (min-width: 992px) {
+  .footer-bg {
     background-image: url("../../assets/images/bg_footer.png");
     background-size: 1238px 330px;
     background-position: 0px;
@@ -22,8 +26,11 @@
   }
 }
 
-.sns-logo {
-  display: block;
+.logo-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
+  border-radius: 1000px;
 }
