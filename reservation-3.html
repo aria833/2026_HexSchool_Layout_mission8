@@ -131,11 +131,11 @@
               <div class="step__circle">1</div>
               <div class="step__label">了解流程</div>
             </div>
-            <div class="step">
+            <div class="step is-active">
               <div class="step__circle">2</div>
               <div class="step__label">填寫資料</div>
             </div>
-            <div class="step">
+            <div class="step is-active">
               <div class="step__circle">3</div>
               <div class="step__label">選擇時間</div>
             </div>
@@ -211,68 +211,89 @@
           <div class="row g-7">
             <div class="col-lg-8">
               <div class="bg-white rounded-6 p-10">
+                <!--標題-->
                 <h2
-                  class="fs-2-m fs-lg-2 fw-bold lh-base mb-10 text-primary-dark"
+                  class="fs-2-m fs-lg-2 fw-bold lh-base mb-5 text-primary-dark"
                 >
-                  預約看房流程
+                  選擇看房時間
                 </h2>
-                <div class="text-center">
-                  <img
-                    src="/2026_HexSchool_Layout_mission8/assets/check-CPZTbJSE.png"
-                    alt=""
-                    class="mb-10 py-10"
-                  />
-                </div>
-                <div class="d-flex mb-7">
-                  <p
-                    class="me-7 text-secondary-light lh-base fw-bold step-size"
-                  >
-                    1.
-                  </p>
-                  <div>
-                    <p class="text-primary fs-6-m-fs-lg-6 lh-lg fw-bold mb-1">
-                      填寫預約資訊
-                    </p>
-                    <p class="lh-lg">
-                      告訴我們您的基本資料和偏好時間。這只是起點，沒有任何約束力！
-                    </p>
+                <p class="fs-lg-6 fs-6-m fw-bold lh-lg mb-10">
+                  請選擇您方便的時間，我們會盡力配合
+                </p>
+                <!--表格-->
+                <form action="" class="mb-10">
+                  <div class="row g-7">
+                    <div class="col-12">
+                      <div>
+                        <div>
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label mb-2 fw-bold lh-lg ms-2 text-dark"
+                            >偏好日期</label
+                          >
+                          <span class="ms-1 fw-bold text-accent">*</span>
+                        </div>
+
+                        <div class="input-group">
+                          <input
+                            type="date"
+                            class="form-control rounded-2 py-4 px-7 calculate-input border-neutral-400"
+                            aria-label="Recipient's username"
+                            aria-describedby="basic-addon2"
+                            placeholder="年/月/日"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="mb-7">
+                        <div>
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label mb-2 fw-bold lh-lg ms-2 text-dark"
+                            >偏好時段</label
+                          >
+                          <span class="ms-1 fw-bold text-accent">*</span>
+                        </div>
+
+                        <div class="d-flex flex-column flex-lg-row mb-2">
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary border-neutral-400 text-primary-dark me-5 flex-grow-1 py-5 rounded-2 mb-5 mb-lg-0"
+                          >
+                            上午 9-12 點
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary border-neutral-400 text-primary-dark me-5 flex-grow-1 py-5 rounded-2 mb-5 mb-lg-0"
+                          >
+                            下午 12-15 點
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary border-neutral-400 text-primary-dark me-5 flex-grow-1 py-5 rounded-2 mb-5 mb-lg-0"
+                          >
+                            下午 15-18 點
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary border-neutral-400 text-primary-dark flex-grow-1 py-5 rounded-2"
+                          >
+                            晚上 18-21 點
+                          </button>
+                        </div>
+                        <p class="fs-mini lh-base text-dark">
+                          提醒：這是您的偏好時間，專業顧問會在確認後與您聯繫最終的看房時間。
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="d-flex mb-7">
-                  <p
-                    class="me-7 text-secondary-light lh-base fw-bold step-size"
-                  >
-                    2.
-                  </p>
-                  <div>
-                    <p class="text-primary fs-6-m-fs-lg-6 lh-lg fw-bold mb-1">
-                      專業顧問聯繫您
-                    </p>
-                    <p class="lh-lg">
-                      我們的專業房地產顧問會在 24
-                      小時內與您聯繫，確認看房時間並回答您的問題。
-                    </p>
-                  </div>
-                </div>
-                <div class="d-flex mb-10">
-                  <p
-                    class="me-7 text-secondary-light lh-base fw-bold step-size"
-                  >
-                    3.
-                  </p>
-                  <div>
-                    <p class="text-primary fs-6-m-fs-lg-6 lh-lg fw-bold mb-1">
-                      完成看房預約
-                    </p>
-                    <p class="lh-lg">
-                      顧問會陪同您參觀房源，詳細介紹房屋特色，並協助您做出最佳決策。
-                    </p>
-                  </div>
-                </div>
+                </form>
+
                 <!--預約按鈕-->
                 <div class="d-flex align-items-center justify-content-center">
                   <button type="button" class="btn btn-primary btn-standard">
-                    開始預約<span class="material-symbols-outlined ms-2">
+                    提交預約<span class="material-symbols-outlined ms-2">
                       arrow_right_alt
                     </span>
                   </button>

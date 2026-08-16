@@ -125,22 +125,6 @@
 
       <section class="pt-17 pb-19">
         <div class="container">
-          <!--流程-->
-          <div class="stepper mb-15">
-            <div class="step is-active">
-              <div class="step__circle">1</div>
-              <div class="step__label">了解流程</div>
-            </div>
-            <div class="step">
-              <div class="step__circle">2</div>
-              <div class="step__label">填寫資料</div>
-            </div>
-            <div class="step">
-              <div class="step__circle">3</div>
-              <div class="step__label">選擇時間</div>
-            </div>
-          </div>
-
           <!--返回前頁-->
           <div class="d-flex gap-2 mb-10">
             <button
@@ -152,203 +136,61 @@
               >返回房源
             </button>
           </div>
-          <!--手機版顯示-->
-          <div class="bg-white rounded-6 d-lg-none py-7 px-6 mb-7">
-            <a href="#">
-              <div class="px-2">
-                <div class="mb-4">
-                  <h5 class="fs-5-m fs-lg-5 text-dark mb-1">現代豪華公寓</h5>
-                  <div class="d-flex align-items-center">
-                    <span class="material-symbols-outlined fs-6-m fs-lg-6">
-                      location_on
-                    </span>
-                    <p class="fs-sm lh-lg">台北市信義區</p>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center mb-7">
-                  <h5 class="fs-lg-5 fs-5-m me-4 lh-lg">NT$</h5>
-                  <h3 class="fs-lg-3 fs-3-m me-4 lh-base text-primary-dark">
-                    1,500
-                  </h3>
-                  <h5 class="fs-lg-5 fs-5-m lh-lg">萬</h5>
-                </div>
-                <div class="d-flex flex-lg-wrap gap-2">
-                  <div
-                    class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
-                  >
-                    <span
-                      class="material-symbols-outlined fs-4 me-2 text-primary"
-                    >
-                      king_bed
-                    </span>
-                    <p class="text-primary-dark">3</p>
-                  </div>
-                  <div
-                    class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
-                  >
-                    <span
-                      class="material-symbols-outlined fs-4 me-2 text-primary"
-                    >
-                      shower
-                    </span>
-                    <p class="text-primary-dark">2</p>
-                  </div>
-                  <div
-                    class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2 flex-shrink-0"
-                  >
-                    <span
-                      class="material-symbols-outlined fs-4 me-2 text-primary"
-                    >
-                      check_box_outline_blank
-                    </span>
-                    <p class="text-primary-dark">45坪</p>
-                  </div>
-                </div>
+
+          <!--送出表單-->
+          <div class="text-center m-auto p-10 bg-white rounded-6 mx-w-966">
+            <img src="data:image/png;base64,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" alt="" class="mb-5" />
+            <h2 class="fs-2-m fs-lg-2 fw-bold lh-base text-primary-dark mb-4">
+              預約申請已送出！
+            </h2>
+            <p class="fw-bold fs-lg-6 fs-6-m lh-lg mb-10">
+              感謝您的預約，我們的專業顧問會在 24 小時內與您聯繫確認看房時間。
+            </p>
+            <!--預約資訊摘要-->
+            <div class="border border-primary-light rounded-2 p-7 mb-10">
+              <h5 class="fw-bold fs-5-m fs-lg-5 lh-lg mb-5 text-primary">
+                預約資訊摘要
+              </h5>
+              <div
+                class="d-flex justify-content-between border-bottom border-primary-sup-light p-7"
+              >
+                <p class="fw-bold lh-lg">聯絡人：</p>
+                <p class="text-dark">王小明</p>
               </div>
-            </a>
-          </div>
-          <!--表單-->
-          <div class="row g-7">
-            <div class="col-lg-8">
-              <div class="bg-white rounded-6 p-10">
-                <h2
-                  class="fs-2-m fs-lg-2 fw-bold lh-base mb-10 text-primary-dark"
-                >
-                  預約看房流程
-                </h2>
-                <div class="text-center">
-                  <img
-                    src="/2026_HexSchool_Layout_mission8/assets/check-CPZTbJSE.png"
-                    alt=""
-                    class="mb-10 py-10"
-                  />
-                </div>
-                <div class="d-flex mb-7">
-                  <p
-                    class="me-7 text-secondary-light lh-base fw-bold step-size"
-                  >
-                    1.
-                  </p>
-                  <div>
-                    <p class="text-primary fs-6-m-fs-lg-6 lh-lg fw-bold mb-1">
-                      填寫預約資訊
-                    </p>
-                    <p class="lh-lg">
-                      告訴我們您的基本資料和偏好時間。這只是起點，沒有任何約束力！
-                    </p>
-                  </div>
-                </div>
-                <div class="d-flex mb-7">
-                  <p
-                    class="me-7 text-secondary-light lh-base fw-bold step-size"
-                  >
-                    2.
-                  </p>
-                  <div>
-                    <p class="text-primary fs-6-m-fs-lg-6 lh-lg fw-bold mb-1">
-                      專業顧問聯繫您
-                    </p>
-                    <p class="lh-lg">
-                      我們的專業房地產顧問會在 24
-                      小時內與您聯繫，確認看房時間並回答您的問題。
-                    </p>
-                  </div>
-                </div>
-                <div class="d-flex mb-10">
-                  <p
-                    class="me-7 text-secondary-light lh-base fw-bold step-size"
-                  >
-                    3.
-                  </p>
-                  <div>
-                    <p class="text-primary fs-6-m-fs-lg-6 lh-lg fw-bold mb-1">
-                      完成看房預約
-                    </p>
-                    <p class="lh-lg">
-                      顧問會陪同您參觀房源，詳細介紹房屋特色，並協助您做出最佳決策。
-                    </p>
-                  </div>
-                </div>
-                <!--預約按鈕-->
-                <div class="d-flex align-items-center justify-content-center">
-                  <button type="button" class="btn btn-primary btn-standard">
-                    開始預約<span class="material-symbols-outlined ms-2">
-                      arrow_right_alt
-                    </span>
-                  </button>
-                </div>
+              <div
+                class="d-flex justify-content-between border-bottom border-primary-sup-light p-7"
+              >
+                <p class="fw-bold lh-lg">Email：</p>
+                <p class="text-dark">ppp@pp.pp</p>
+              </div>
+              <div
+                class="d-flex justify-content-between border-bottom border-primary-sup-light p-7"
+              >
+                <p class="fw-bold lh-lg">電話：</p>
+                <p class="text-dark">0987654321</p>
+              </div>
+              <div
+                class="d-flex justify-content-between border-bottom border-primary-sup-light p-7"
+              >
+                <p class="fw-bold lh-lg">偏好日期：</p>
+                <p class="text-dark">2026-02-25</p>
+              </div>
+              <div class="d-flex justify-content-between p-7">
+                <p class="fw-bold lh-lg">偏好時段：</p>
+                <p class="text-dark">上午 9-12點</p>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="bg-white rounded-6 d-none d-lg-block">
-                <a href="#">
-                  <div class="position-relative mb-5 d-none d-lg-block">
-                    <img
-                      src="/2026_HexSchool_Layout_mission8/assets/search-house1-BLw1m9FQ.png"
-                      alt=""
-                      class="rounded-top-5"
-                    />
-                    <p
-                      class="bg-neutral-0 lh-lg py-1 px-6 rounded-pill position-absolute house-badge"
-                    >
-                      公寓
-                    </p>
-                  </div>
-
-                  <div class="px-2">
-                    <div class="mb-4">
-                      <h5 class="fs-5-m fs-lg-5 text-dark mb-1">
-                        現代豪華公寓
-                      </h5>
-                      <div class="d-flex align-items-center">
-                        <span class="material-symbols-outlined fs-6-m fs-lg-6">
-                          location_on
-                        </span>
-                        <p class="fs-sm lh-lg">台北市信義區</p>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-7">
-                      <h5 class="fs-lg-5 fs-5-m me-4 lh-lg">NT$</h5>
-                      <h3 class="fs-lg-3 fs-3-m me-4 lh-base text-primary-dark">
-                        1,500
-                      </h3>
-                      <h5 class="fs-lg-5 fs-5-m lh-lg">萬</h5>
-                    </div>
-                    <div class="d-flex flex-lg-wrap gap-2">
-                      <div
-                        class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
-                      >
-                        <span
-                          class="material-symbols-outlined fs-4 me-2 text-primary"
-                        >
-                          king_bed
-                        </span>
-                        <p class="text-primary-dark">3</p>
-                      </div>
-                      <div
-                        class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
-                      >
-                        <span
-                          class="material-symbols-outlined fs-4 me-2 text-primary"
-                        >
-                          shower
-                        </span>
-                        <p class="text-primary-dark">2</p>
-                      </div>
-                      <div
-                        class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2 flex-shrink-0"
-                      >
-                        <span
-                          class="material-symbols-outlined fs-4 me-2 text-primary"
-                        >
-                          check_box_outline_blank
-                        </span>
-                        <p class="text-primary-dark">45坪</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
+            <!--按鈕-->
+            <div class="d-flex gap-7">
+              <button
+                type="button"
+                class="btn btn-outline-primary btn-standard"
+              >
+                返回房源
+              </button>
+              <button type="button" class="btn btn-primary btn-standard">
+                返回房源
+              </button>
             </div>
           </div>
         </div>
