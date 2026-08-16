@@ -22,10 +22,10 @@ const swiper = new Swiper(".swiper", {
 });
 
 //手機版滑過特定區域前，將按鈕鎖定在下方
-const mobileCalculateBtn = document.querySelector(".mobile-calculate-btn");
-
+const mobileCalculateBtn = document.querySelector(
+  ".mobile-calculate-btn, .mobile-house-btn",
+);
 const contactArea = document.querySelector(".contact-area");
-
 const observer = new IntersectionObserver(
   ([entry]) => {
     if (entry.isIntersecting) {

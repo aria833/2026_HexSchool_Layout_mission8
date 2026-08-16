@@ -2,3 +2,18 @@
   right: 48px;
   bottom: 35px;
 }
+
+.mobile-house-btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 16px 20px;
+  background-color: $white;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+
+  &.is-hidden {
+    display: none;
+  }
+}

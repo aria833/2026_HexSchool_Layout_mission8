@@ -1,0 +1,85 @@
+//標題、背景區域
+.search-m-bg {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .calculate {
+    background-image: url("../images/Hero Image.png");
+    height: 520px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+//步驟
+.stepper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+@media (min-width: 992px) {
+  .stepper {
+    width: 636px;
+  }
+}
+
+.step {
+  position: relative; /* 給 ::before 定位用 */
+  flex: 1; /* 三步平分寬度 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* 連接線：從自己的中心往左畫到前一步的中心 */
+.step:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  right: 50%;
+  left: -50%;
+  height: 2px;
+  background: $neutral-400;
+}
+
+.step__circle {
+  position: relative;
+  z-index: 1; /* 疊在線的上層 */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  background: $neutral-100;
+  border: 2px solid $neutral-400;
+  color: $primary;
+}
+
+.step__label {
+  color: $neutral-400;
+}
+
+/* 進行中 / 已完成 */
+.step.is-active .step__circle {
+  background: $primary;
+  border-color: $primary;
+  color: $white;
+}
+.step.is-active .step__label {
+  color: $primary-dark;
+}
+.step.is-active:not(:first-child)::before {
+  background: $primary;
+}
+
+.step-size {
+  font-size: 68px;
+}
