@@ -22,11 +22,13 @@ $utilities: map-merge(
           responsive: true,
         )
       ),
-    //TODO: 圓角尺寸擴充樣式
+    //圓角尺寸擴充樣式
+    // 圓角尺寸擴充樣式
     "rounded": map-merge(
         map-get($utilities, "rounded"),
         (
           responsive: true,
+
           values: map-merge(
               map-get(map-get($utilities, "rounded"), "values"),
               (
@@ -34,6 +36,117 @@ $utilities: map-merge(
               )
             ),
         )
+      ),
+    // 上方圓角
+    "rounded-top": map-merge(
+        map-get($utilities, "rounded-top"),
+        (
+          responsive: true,
+
+          values: map-merge(
+              map-get(map-get($utilities, "rounded-top"), "values"),
+              (
+                6: 2.5rem,
+              )
+            ),
+        )
+      ),
+    // 下方圓角
+    "rounded-bottom": map-merge(
+        map-get($utilities, "rounded-bottom"),
+        (
+          responsive: true,
+
+          values: map-merge(
+              map-get(map-get($utilities, "rounded-bottom"), "values"),
+              (
+                6: 2.5rem,
+              )
+            ),
+        )
+      ),
+    // 左側圓角
+    "rounded-start": map-merge(
+        map-get($utilities, "rounded-start"),
+        (
+          responsive: true,
+
+          values: map-merge(
+              map-get(map-get($utilities, "rounded-start"), "values"),
+              (
+                6: 2.5rem,
+              )
+            ),
+        )
+      ),
+    // 右側圓角
+    "rounded-end": map-merge(
+        map-get($utilities, "rounded-end"),
+        (
+          responsive: true,
+
+          values: map-merge(
+              map-get(map-get($utilities, "rounded-end"), "values"),
+              (
+                6: 2.5rem,
+              )
+            ),
+        )
+      ),
+    // 左上角
+    "rounded-top-start": (
+        property: border-top-left-radius,
+        class: rounded-top-start,
+        responsive: true,
+
+        values: map-merge(
+            map-get(map-get($utilities, "rounded"), "values"),
+            (
+              6: 2.5rem,
+            )
+          ),
+      ),
+
+    // 右上角
+    "rounded-top-end": (
+        property: border-top-right-radius,
+        class: rounded-top-end,
+        responsive: true,
+
+        values: map-merge(
+            map-get(map-get($utilities, "rounded"), "values"),
+            (
+              6: 2.5rem,
+            )
+          ),
+      ),
+
+    // 左下角
+    "rounded-bottom-start": (
+        property: border-bottom-left-radius,
+        class: rounded-bottom-start,
+        responsive: true,
+
+        values: map-merge(
+            map-get(map-get($utilities, "rounded"), "values"),
+            (
+              6: 2.5rem,
+            )
+          ),
+      ),
+
+    // 右下角
+    "rounded-bottom-end": (
+        property: border-bottom-right-radius,
+        class: rounded-bottom-end,
+        responsive: true,
+
+        values: map-merge(
+            map-get(map-get($utilities, "rounded"), "values"),
+            (
+              6: 2.5rem,
+            )
+          ),
       )
   )
 );
