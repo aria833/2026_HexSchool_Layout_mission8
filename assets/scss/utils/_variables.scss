@@ -525,9 +525,14 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-text-align: null !default;
-$body-color: $gray-900 !default;
-$body-bg: $white !default;
-
+//TODO:自定義
+$body-color: $default !default;
+//原有的
+//$body-color: $gray-900 !default;
+//TODO:自定義
+$body-bg: $neutral-100 !default;
+//原有的
+//$body-bg: $white !default;
 $body-secondary-color: rgba($body-color, 0.75) !default;
 $body-secondary-bg: $gray-200 !default;
 
@@ -561,8 +566,10 @@ $icon-link-icon-transform: translate3d(0.25em, 0, 0) !default;
 // Paragraphs
 //
 // Style p element.
-
-$paragraph-margin-bottom: 1rem !default;
+//TODO:自定義
+$paragraph-margin-bottom: 0 !default;
+//原有的
+//$paragraph-margin-bottom: 1rem !default;
 
 // Grid breakpoints
 //
@@ -693,6 +700,10 @@ $aspect-ratios: (
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:
+//TODO:自定義
+  "Noto Sans TC",
+  sans-serif,
+  //原有的
   system-ui,
   -apple-system,
   "Segoe UI",
@@ -793,7 +804,10 @@ $font-sizes: (
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom: $spacer * 0.5 !default;
+//TODO:自定義
+$headings-margin-bottom: 0 !default;
+//原有的
+//$headings-margin-bottom: $spacer * 0.5 !default;
 $headings-font-family: null !default;
 $headings-font-style: null !default;
 $headings-font-weight: 500 !default;
