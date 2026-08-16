@@ -12,3 +12,67 @@
     max-width: 200px;
   }
 }
+
+.btn-green {
+  background-color: $primary;
+  color: $white;
+  &:hover {
+    background-color: $primary-light;
+    color: $white;
+  }
+  &:press {
+    background-color: $primary-light;
+    color: $white;
+  }
+}
+
+.btn-outline-green {
+  border-color: $primary;
+  color: $primary-dark;
+
+  &:hover {
+    border-color: $primary-light;
+    color: $primary;
+  }
+  &:press {
+    border-color: $primary-light;
+    color: $primary;
+  }
+}
+
+.btn-orange {
+  background-color: $secondary;
+  color: $white;
+  &:hover {
+    background-color: $secondary-dark;
+    color: $white;
+  }
+  &:press {
+    background-color: $secondary-dark;
+    color: $white;
+  }
+}
+
+.btn-gray100 {
+  background-color: $neutral-100;
+  color: $primary-dark;
+  &:hover {
+    background-color: $neutral-200;
+    color: $primary-dark;
+  }
+  &:press {
+    background-color: $neutral-200;
+    color: $primary-dark;
+  }
+}
+
+.btn-facebook {
+  color: $primary;
+
+  &:hover {
+    color: $primary-light;
+  }
+  &:press {
+    color: $primary-light;
+  }
+}

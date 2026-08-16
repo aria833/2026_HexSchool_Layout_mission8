@@ -34,3 +34,17 @@
   height: 40px;
   border-radius: 1000px;
 }
+
+.btn-facebook {
+  color: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: $primary-light;
+  }
+  &:press {
+    color: $primary-light;
+  }
+}

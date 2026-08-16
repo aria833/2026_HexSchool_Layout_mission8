@@ -17,12 +17,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-
-    <!--Swiper輪播-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -30,7 +24,7 @@
     <div class="mobile-calculate-btn d-lg-none">
       <button
         type="button"
-        class="btn btn-primary btn-standard bg-neutral-100 text-primary w-100 fw-bold"
+        class="btn btn-green btn-standard bg-neutral-100 text-primary w-100 fw-bold"
       >
         預約看房
       </button>
@@ -76,10 +70,10 @@
           <!--手風琴-->
           <div class="col-lg-8 mb-10 mb-lg-0">
             <div
-              class="accordion rounded-6 overflow-hidden mb-10"
+              class="accordion rounded-6 overflow-hidden mb-10 bg-white"
               id="accordionExample"
             >
-              <div class="accordion-item border-0">
+              <div class="accordion-item border-0 bg-white">
                 <h3
                   class="accordion-header calculate-form-header"
                   id="headingOne"
@@ -119,7 +113,7 @@
                           <div class="input-group">
                             <input
                               type="text"
-                              class="form-control border-end-0 rounded-2 py-4 px-7 calculate-input"
+                              class="form-control border-end-0 rounded-2 py-4 px-7 calculate-input bg-white"
                               aria-label="Recipient's username"
                               aria-describedby="basic-addon2"
                               placeholder="請輸入金額"
@@ -146,19 +140,19 @@
                           <div class="d-flex">
                             <button
                               type="button"
-                              class="btn btn-primary me-5 flex-grow-1 py-5 rounded-2"
+                              class="btn btn-green me-5 flex-grow-1 py-5 rounded-2"
                             >
                               20 年
                             </button>
                             <button
                               type="button"
-                              class="btn btn-outline-primary border-neutral-400 text-primary-dark me-5 flex-grow-1 py-5 rounded-2"
+                              class="btn btn-outline-green me-5 flex-grow-1 py-5 rounded-2"
                             >
                               30 年
                             </button>
                             <button
                               type="button"
-                              class="btn btn-outline-primary border-neutral-400 text-primary-dark flex-grow-1 py-5 rounded-2"
+                              class="btn btn-outline-green flex-grow-1 py-5 rounded-2"
                             >
                               40 年
                             </button>
@@ -179,7 +173,7 @@
                           <div class="input-group">
                             <input
                               type="text"
-                              class="form-control border-end-0 rounded-2 py-4 px-7 calculate-input"
+                              class="form-control border-end-0 rounded-2 py-4 px-7 calculate-input bg-white"
                               aria-label="Recipient's username"
                               aria-describedby="basic-addon2"
                               placeholder="請輸入相關費用"
@@ -205,7 +199,7 @@
                           <div class="input-group">
                             <input
                               type="text"
-                              class="form-control border-end-0 rounded-2 py-4 px-7 calculate-input"
+                              class="form-control border-end-0 rounded-2 py-4 px-7 calculate-input bg-white"
                               aria-label="Recipient's username"
                               aria-describedby="basic-addon2"
                               placeholder="請輸入期限"
@@ -232,19 +226,19 @@
                           <div class="d-flex">
                             <button
                               type="button"
-                              class="btn btn-outline-primary border-neutral-400 text-primary-dark me-5 flex-grow-1 py-5 rounded-2"
+                              class="btn btn-outline-green me-5 flex-grow-1 py-5 rounded-2"
                             >
                               本息平均攤還
                             </button>
                             <button
                               type="button"
-                              class="btn btn-outline-primary border-neutral-400 text-primary-dark me-5 flex-grow-1 py-5 rounded-2"
+                              class="btn btn-outline-green me-5 flex-grow-1 py-5 rounded-2"
                             >
                               本金平均攤還
                             </button>
                             <button
                               type="button"
-                              class="btn btn-outline-primary border-neutral-400 text-primary-dark flex-grow-1 py-5 rounded-2"
+                              class="btn btn-outline-green flex-grow-1 py-5 rounded-2"
                             >
                               到期還本
                             </button>
@@ -337,7 +331,7 @@
                                   <p class="me-1">第</p>
                                   <input
                                     type="text"
-                                    class="form-control py-2 rounded-2 calculate-input text-center"
+                                    class="form-control py-2 rounded-2 calculate-input text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                     value="1"
@@ -347,7 +341,7 @@
                                   <p class="mx-1">第</p>
                                   <input
                                     type="text"
-                                    class="form-control py-2 rounded-2 calculate-input text-center"
+                                    class="form-control py-2 rounded-2 calculate-input text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                     value="120"
@@ -357,7 +351,7 @@
                                 <div class="d-flex align-items-center ms-lg-3">
                                   <input
                                     type="text "
-                                    class="form-control calculate-input py-2 rounded-2 text-center"
+                                    class="form-control calculate-input py-2 rounded-2 text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                     value="1.99"
@@ -372,7 +366,7 @@
                                   <p class="me-1">第</p>
                                   <input
                                     type="text"
-                                    class="form-control py-2 rounded-2 calculate-input text-center"
+                                    class="form-control py-2 rounded-2 calculate-input text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                     value="121"
@@ -382,7 +376,7 @@
                                   <p class="mx-1">第</p>
                                   <input
                                     type="text"
-                                    class="form-control py-2 rounded-2 calculate-input text-center"
+                                    class="form-control py-2 rounded-2 calculate-input text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                     value="240"
@@ -392,7 +386,7 @@
                                 <div class="d-flex align-items-center ms-lg-3">
                                   <input
                                     type="text "
-                                    class="form-control calculate-input py-2 rounded-2 text-center"
+                                    class="form-control calculate-input py-2 rounded-2 text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                     value="2.5"
@@ -414,7 +408,7 @@
                                   <p class="me-1">第</p>
                                   <input
                                     type="text"
-                                    class="form-control py-2 rounded-2 calculate-input text-center"
+                                    class="form-control py-2 rounded-2 calculate-input text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                   />
@@ -423,7 +417,7 @@
                                   <p class="mx-1">第</p>
                                   <input
                                     type="text"
-                                    class="form-control py-2 rounded-2 calculate-input text-center"
+                                    class="form-control py-2 rounded-2 calculate-input text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                   />
@@ -432,7 +426,7 @@
                                 <div class="d-flex align-items-center ms-lg-3">
                                   <input
                                     type="text "
-                                    class="form-control calculate-input py-2 rounded-2 text-center"
+                                    class="form-control calculate-input py-2 rounded-2 text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                   />
@@ -446,7 +440,7 @@
                                   <p class="me-1">第</p>
                                   <input
                                     type="text"
-                                    class="form-control py-2 rounded-2 calculate-input text-center"
+                                    class="form-control py-2 rounded-2 calculate-input text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                   />
@@ -455,7 +449,7 @@
                                   <p class="mx-1">第</p>
                                   <input
                                     type="text"
-                                    class="form-control py-2 rounded-2 calculate-input text-center"
+                                    class="form-control py-2 rounded-2 calculate-input text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                   />
@@ -464,7 +458,7 @@
                                 <div class="d-flex align-items-center ms-lg-3">
                                   <input
                                     type="text "
-                                    class="form-control calculate-input py-2 rounded-2 text-center"
+                                    class="form-control calculate-input py-2 rounded-2 text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                   />
@@ -485,7 +479,7 @@
                                   <p class="me-1">第</p>
                                   <input
                                     type="text"
-                                    class="form-control py-2 rounded-2 calculate-input text-center"
+                                    class="form-control py-2 rounded-2 calculate-input text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                   />
@@ -494,7 +488,7 @@
                                   <p class="mx-1">第</p>
                                   <input
                                     type="text"
-                                    class="form-control py-2 rounded-2 calculate-input text-center"
+                                    class="form-control py-2 rounded-2 calculate-input text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                   />
@@ -502,8 +496,8 @@
                                 </div>
                                 <div class="d-flex align-items-center ms-lg-3">
                                   <input
-                                    type="text "
-                                    class="form-control calculate-input py-2 rounded-2 text-center"
+                                    type="text"
+                                    class="form-control calculate-input py-2 rounded-2 text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                   />
@@ -517,7 +511,7 @@
                                   <p class="me-1">第</p>
                                   <input
                                     type="text"
-                                    class="form-control py-2 rounded-2 calculate-input text-center"
+                                    class="form-control py-2 rounded-2 calculate-input text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                   />
@@ -526,7 +520,7 @@
                                   <p class="mx-1">第</p>
                                   <input
                                     type="text"
-                                    class="form-control py-2 rounded-2 calculate-input text-center"
+                                    class="form-control py-2 rounded-2 calculate-input text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                   />
@@ -535,7 +529,7 @@
                                 <div class="d-flex align-items-center ms-lg-3">
                                   <input
                                     type="text "
-                                    class="form-control calculate-input py-2 rounded-2 text-center"
+                                    class="form-control calculate-input py-2 rounded-2 text-center bg-white"
                                     id="exampleFormControlInput1"
                                     placeholder="0"
                                   />
@@ -549,12 +543,16 @@
                       <!--按鈕-->
                       <div class="d-flex justify-content-center">
                         <button
-                          class="btn btn-outline-primary btn-standard me-7"
+                          type="reset"
+                          class="btn btn-outline-green btn-standard me-7"
                         >
                           重新試算
                         </button>
 
-                        <button class="btn btn-primary btn-standard">
+                        <button
+                          type="button"
+                          class="btn btn-green btn-standard"
+                        >
                           開始試算
                         </button>
                       </div>
@@ -564,7 +562,7 @@
               </div>
             </div>
             <!--試算結果-->
-            <div class="p-10 rounded-6 bg-white">
+            <div class="p-10 rounded-6 bg-white cal-result-deco">
               <h3
                 class="fs-lg-3 fs-3-m fw-bold lh-base mb-10 text-primary-dark"
               >
@@ -629,7 +627,7 @@
                     >
                       <div class="accordion-body bg-primary-light">
                         <table
-                          class="table table-striped rounded-2 text-center"
+                          class="table table-striped rounded-2 text-center overflow-hidden"
                         >
                           <thead>
                             <tr class="text-primary-dark">
@@ -912,7 +910,7 @@
               <div>
                 <button
                   type="button"
-                  class="btn btn-secondary py-5 w-100 bg-neutral-100 border-0 text-primary-dark fw-bold"
+                  class="btn btn-gray100 py-5 w-100 border-0 fw-bold"
                 >
                   預約看房
                 </button>
@@ -930,7 +928,7 @@
               <div>
                 <button
                   type="button"
-                  class="btn btn-secondary py-5 w-100 bg-white border-dark text-primary-dark fw-bold"
+                  class="btn btn-outline-green py-5 w-100 fw-bold"
                 >
                   聯絡我們
                 </button>
