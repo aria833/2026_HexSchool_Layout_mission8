@@ -42,10 +42,10 @@
         <div class="calculate mx-5 rounded-5 m-lg-10 rounded-lg-6"></div>
       </section>
 
-      <section class="pt-17 pb-19">
+      <section class="py-11 pt-lg-17 pb-lg-19">
         <div class="container">
           <!--流程-->
-          <div class="stepper mb-15">
+          <div class="stepper mb-lg-15 mb-10">
             <div class="step is-active">
               <div class="step__circle">1</div>
               <div class="step__label">了解流程</div>
@@ -61,15 +61,14 @@
           </div>
 
           <!--返回前頁-->
-          <div class="d-flex gap-2 mb-10">
-            <button
-              type="button"
-              class="btn btn-green bg-transparent fw-bold text-primary-dark border-0 align-items-center d-flex"
+          <div class="d-flex gap-2 mb-lg-10 mb-7">
+            <a
+              href="./reservation-2.html"
+              class="fw-bold link-primary text-primary-dark d-flex align-items-center"
             >
-              <span class="material-symbols-outlined p-1 text-black">
-                arrow_back </span
+              <span class="material-symbols-outlined p-1"> arrow_back </span
               >返回房源
-            </button>
+            </a>
           </div>
           <!--手機版顯示-->
           <div class="bg-white rounded-6 d-lg-none py-7 px-6 mb-7">
@@ -129,7 +128,7 @@
           <!--表單-->
           <div class="row g-7">
             <div class="col-lg-8">
-              <div class="bg-white rounded-6 p-10">
+              <div class="bg-white rounded-6 p-10 cal">
                 <!--標題-->
                 <h2
                   class="fs-2-m fs-lg-2 fw-bold lh-base mb-5 text-primary-dark"
@@ -140,7 +139,7 @@
                   請選擇您方便的時間，我們會盡力配合
                 </p>
                 <!--表格-->
-                <form action="" class="mb-10">
+                <form action="" class="mb-lg-10 mb-7">
                   <div class="row g-7">
                     <div class="col-12">
                       <div>
@@ -156,7 +155,7 @@
                         <div class="input-group">
                           <input
                             type="date"
-                            class="form-control rounded-2 py-4 px-7 calculate-input border-neutral-400"
+                            class="form-control rounded-2 py-4 px-7 calculate-input date-input border-neutral-400 bg-white"
                             aria-label="Recipient's username"
                             aria-describedby="basic-addon2"
                             placeholder="年/月/日"
@@ -174,33 +173,41 @@
                           >
                           <span class="ms-1 fw-bold text-accent">*</span>
                         </div>
-
-                        <div class="d-flex flex-column flex-lg-row mb-2">
-                          <button
-                            type="button"
-                            class="btn btn-outline-green border-neutral-400 text-primary-dark me-5 flex-grow-1 py-5 rounded-2 mb-5 mb-lg-0"
-                          >
-                            上午 9-12 點
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-outline-green border-neutral-400 text-primary-dark me-5 flex-grow-1 py-5 rounded-2 mb-5 mb-lg-0"
-                          >
-                            下午 12-15 點
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-outline-green border-neutral-400 text-primary-dark me-5 flex-grow-1 py-5 rounded-2 mb-5 mb-lg-0"
-                          >
-                            下午 15-18 點
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-outline-green border-neutral-400 text-primary-dark flex-grow-1 py-5 rounded-2"
-                          >
-                            晚上 18-21 點
-                          </button>
+                        <div class="row mb-2 g-5">
+                          <div class="col-lg-3 flex-grow-1">
+                            <button
+                              type="button"
+                              class="btn btn-outline-green w-100 py-5 rounded-2"
+                            >
+                              上午 9-12 點
+                            </button>
+                          </div>
+                          <div class="col-lg-3 flex-grow-1">
+                            <button
+                              type="button"
+                              class="btn btn-outline-green w-100 py-5 rounded-2"
+                            >
+                              下午 12-15 點
+                            </button>
+                          </div>
+                          <div class="col-lg-3 flex-grow-1">
+                            <button
+                              type="button"
+                              class="btn btn-outline-green w-100 py-5 rounded-2"
+                            >
+                              下午 15-18 點
+                            </button>
+                          </div>
+                          <div class="col-lg-3 flex-grow-1">
+                            <button
+                              type="button"
+                              class="btn btn-outline-green w-100 py-5 rounded-2"
+                            >
+                              晚上 18-21 點
+                            </button>
+                          </div>
                         </div>
+
                         <p class="fs-mini lh-base text-dark">
                           提醒：這是您的偏好時間，專業顧問會在確認後與您聯繫最終的看房時間。
                         </p>
@@ -211,7 +218,11 @@
 
                 <!--預約按鈕-->
                 <div class="d-flex align-items-center justify-content-center">
-                  <button type="button" class="btn btn-green btn-standard">
+                  <button
+                    type="button"
+                    class="btn btn-green btn-standard"
+                    onclick="location.href = './reservation-success.html'"
+                  >
                     提交預約<span class="material-symbols-outlined ms-2">
                       arrow_right_alt
                     </span>

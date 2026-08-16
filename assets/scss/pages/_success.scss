@@ -1,3 +1,25 @@
 .mx-w-966 {
   max-width: 996px;
 }
+
+.success-deco {
+  background-image:
+    url("../images/display-1.png"), url("../images/display-2.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    left -91px top 139px,
+    right -252px bottom;
+  z-index: 100px;
+}
+
+@media (min-width: 992px) {
+  .success-deco {
+    background-image:
+      url("../images/display-1.png"), url("../images/display-2.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position:
+      left 35px top 369px,
+      right bottom;
+    z-index: 100px;
+  }
+}
