@@ -25,10 +25,10 @@
     />
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js"></script>
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.min.js"></script>
-    <script type="module" crossorigin src="/2026_HexSchool_Layout_mission8/assets/main-CMXuZwt3.js"></script>
+    <script type="module" crossorigin src="/2026_HexSchool_Layout_mission8/assets/main-RevuTGHz.js"></script>
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js"></script>
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.min.js"></script>
-    <link rel="stylesheet" crossorigin href="/2026_HexSchool_Layout_mission8/assets/main-NoscRkAH.css">
+    <link rel="stylesheet" crossorigin href="/2026_HexSchool_Layout_mission8/assets/main-CQtzczgn.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top py-lg-5">
@@ -123,10 +123,10 @@
         <div class="calculate mx-5 rounded-5 m-lg-10 rounded-lg-6"></div>
       </section>
 
-      <section class="pt-17 pb-19">
+      <section class="py-11 pt-lg-17 pb-lg-19">
         <div class="container">
           <!--流程-->
-          <div class="stepper mb-15">
+          <div class="stepper mb-lg-15 mb-10">
             <div class="step is-active">
               <div class="step__circle">1</div>
               <div class="step__label">了解流程</div>
@@ -142,15 +142,14 @@
           </div>
 
           <!--返回前頁-->
-          <div class="d-flex gap-2 mb-10">
-            <button
-              type="button"
-              class="btn btn-green bg-transparent fw-bold text-primary-dark border-0 align-items-center d-flex"
+          <div class="d-flex gap-2 mb-lg-10 mb-7">
+            <a
+              href="./reservation-1.html"
+              class="fw-bold link-primary text-primary-dark d-flex align-items-center"
             >
-              <span class="material-symbols-outlined p-1 text-black">
-                arrow_back </span
+              <span class="material-symbols-outlined p-1"> arrow_back </span
               >返回房源
-            </button>
+            </a>
           </div>
           <!--手機版顯示-->
           <div class="bg-white rounded-6 d-lg-none py-7 px-6 mb-7">
@@ -210,7 +209,7 @@
           <!--表單-->
           <div class="row g-7">
             <div class="col-lg-8">
-              <div class="bg-white rounded-6 p-10">
+              <div class="bg-white rounded-6 p-10 cal">
                 <!--標題-->
                 <h2
                   class="fs-2-m fs-lg-2 fw-bold lh-base mb-5 text-primary-dark"
@@ -238,7 +237,7 @@
                         <div class="input-group">
                           <input
                             type="text"
-                            class="form-control rounded-2 py-4 px-7 calculate-input border-neutral-400"
+                            class="form-control rounded-2 py-4 px-7 calculate-input border-neutral-400 bg-white"
                             aria-label="Recipient's username"
                             aria-describedby="basic-addon2"
                             placeholder="請輸入名字"
@@ -262,7 +261,7 @@
                         <div class="input-group">
                           <input
                             type="text"
-                            class="form-control rounded-2 py-4 px-7 calculate-input border-neutral-400"
+                            class="form-control rounded-2 py-4 px-7 calculate-input border-neutral-400 bg-white"
                             aria-label="Recipient's username"
                             aria-describedby="basic-addon2"
                             placeholder="請輸入E-mail"
@@ -285,7 +284,7 @@
                         <div class="input-group">
                           <input
                             type="text"
-                            class="form-control rounded-2 py-4 px-7 calculate-input border-neutral-400"
+                            class="form-control rounded-2 py-4 px-7 calculate-input border-neutral-400 bg-white"
                             aria-label="Recipient's username"
                             aria-describedby="basic-addon2"
                             placeholder="請輸入電話"
@@ -304,7 +303,7 @@
                       <div class="d-flex gap-7 py-4 px-2 align-items-center">
                         <div class="form-check">
                           <input
-                            class="form-check-input"
+                            class="form-check-input bg-white"
                             type="radio"
                             name="flexRadioDefault"
                             id="flexRadioDefault1"
@@ -318,7 +317,7 @@
                         </div>
                         <div class="form-check">
                           <input
-                            class="form-check-input"
+                            class="form-check-input bg-white"
                             type="radio"
                             name="flexRadioDefault"
                             id="flexRadioDefault2"
@@ -340,7 +339,7 @@
                           >補充說明</label
                         >
                         <textarea
-                          class="form-control border-neutral-400"
+                          class="form-control border-neutral-400 bg-white"
                           id="exampleFormControlTextarea1"
                           rows="6"
                           placeholder="請隨意告訴我們任何想法..."
@@ -352,7 +351,11 @@
 
                 <!--預約按鈕-->
                 <div class="d-flex align-items-center justify-content-center">
-                  <button type="button" class="btn btn-green btn-standard">
+                  <button
+                    type="button"
+                    class="btn btn-green btn-standard"
+                    onclick="location.href = './reservation-3.html'"
+                  >
                     下一步<span class="material-symbols-outlined ms-2">
                       arrow_right_alt
                     </span>
