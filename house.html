@@ -31,10 +31,10 @@
     />
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js"></script>
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.min.js"></script>
-    <script type="module" crossorigin src="/2026_HexSchool_Layout_mission8/assets/main-BFcNZT0-.js"></script>
+    <script type="module" crossorigin src="/2026_HexSchool_Layout_mission8/assets/main-CVpG0Rcn.js"></script>
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js"></script>
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.min.js"></script>
-    <link rel="stylesheet" crossorigin href="/2026_HexSchool_Layout_mission8/assets/main-CGof_yf1.css">
+    <link rel="stylesheet" crossorigin href="/2026_HexSchool_Layout_mission8/assets/main-D4uAq-Zz.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top py-lg-5">
@@ -216,7 +216,7 @@
                       data-pswp-width="1200"
                       data-pswp-height="800"
                       target="_blank"
-                      class="btn btn-neutral-100 text-primary-dark fw-bold btn-standard rounded-3"
+                      class="btn btn-gray100 fw-bold btn-standard rounded-3"
                       >查看更多照片
                       <span class="material-symbols-outlined"
                         >arrow_forward</span
@@ -327,7 +327,7 @@
               </div>
 
               <!--房源介紹-->
-              <div class="bg-white rounded-6 p-10">
+              <div class="bg-white rounded-6 p-10 cal">
                 <h4 class="fw-bold fs-lg-4 fs-4-m lh-base mb-13 text-dark">
                   房源介紹
                 </h4>
@@ -632,12 +632,13 @@
       </section>
 
       <!--相似房源推薦-->
-      <section class="pt-18 pb-19">
+      <section class="pt-18 pb-19 house-deco">
         <div class="container">
           <h2 class="fs-lg-2 fs-2-m fw-bold lh-base mb-13 text-primary-dark">
             相似房源推薦
           </h2>
-          <div class="row g-5">
+          <div class="row g-5 d-none d-lg-flex">
+            <!--桌機版-->
             <div class="col-lg-4">
               <a href="#">
                 <div class="position-relative mb-5">
@@ -822,108 +823,356 @@
               </a>
             </div>
           </div>
+          <!-- 手機版 Carousel -->
+
+          <div id="houseCarousel" class="carousel slide d-lg-none">
+            <div class="carousel-inner">
+              <!-- 第一張 -->
+
+              <div class="carousel-item active">
+                <a href="#">
+                  <div class="position-relative mb-5">
+                    <img
+                      src="/2026_HexSchool_Layout_mission8/assets/search-house1-BLw1m9FQ.png"
+                      alt=""
+                      class="rounded-5"
+                    />
+                    <p
+                      class="bg-neutral-0 lh-lg py-1 px-6 rounded-pill position-absolute house-badge"
+                    >
+                      別墅
+                    </p>
+                  </div>
+
+                  <div class="px-2">
+                    <div class="d-flex justify-content-between mb-4">
+                      <h5 class="fs-5-m fs-lg-5 text-dark">景觀別墅</h5>
+                      <div class="d-flex align-items-center">
+                        <span class="material-symbols-outlined fs-6-m fs-lg-6">
+                          location_on
+                        </span>
+                        <p class="fs-sm lh-lg">台北市信義區</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-7">
+                      <h5 class="fs-lg-5 fs-5-m me-4 lh-lg">NT$</h5>
+                      <h3 class="fs-lg-3 fs-3-m me-4 lh-base text-primary-dark">
+                        1,500
+                      </h3>
+                      <h5 class="fs-lg-5 fs-5-m lh-lg">萬</h5>
+                    </div>
+                    <div class="d-flex flex-lg-wrap gap-2">
+                      <div
+                        class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
+                      >
+                        <span class="material-symbols-outlined fs-4 me-2">
+                          king_bed
+                        </span>
+                        <p class="text-primary-dark">3</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
+                      >
+                        <span class="material-symbols-outlined fs-4 me-2">
+                          shower
+                        </span>
+                        <p class="text-primary-dark">2</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2 flex-shrink-0"
+                      >
+                        <span class="material-symbols-outlined fs-4 me-2">
+                          check_box_outline_blank
+                        </span>
+                        <p class="text-primary-dark">45坪</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- 第二張 -->
+
+              <div class="carousel-item">
+                <a href="#">
+                  <div class="position-relative mb-5">
+                    <img
+                      src="/2026_HexSchool_Layout_mission8/assets/search-house3-Cm4HGmVu.png"
+                      alt=""
+                      class="rounded-5"
+                    />
+                    <p
+                      class="bg-neutral-0 lh-lg py-1 px-6 rounded-pill position-absolute house-badge"
+                    >
+                      豪宅
+                    </p>
+                  </div>
+
+                  <div class="px-2">
+                    <div class="d-flex justify-content-between mb-4">
+                      <h5 class="fs-5-m fs-lg-5 text-dark">景觀別墅</h5>
+                      <div class="d-flex align-items-center">
+                        <span class="material-symbols-outlined fs-6-m fs-lg-6">
+                          location_on
+                        </span>
+                        <p class="fs-sm lh-lg">台北市信義區</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-7">
+                      <h5 class="fs-lg-5 fs-5-m me-4 lh-lg">NT$</h5>
+                      <h3 class="fs-lg-3 fs-3-m me-4 lh-base text-primary-dark">
+                        1,500
+                      </h3>
+                      <h5 class="fs-lg-5 fs-5-m lh-lg">萬</h5>
+                    </div>
+                    <div class="d-flex flex-lg-wrap gap-2">
+                      <div
+                        class="d-flex align-items-center border border-primary rounded-pill py-2 px-6"
+                      >
+                        <span class="material-symbols-outlined fs-4 me-2">
+                          king_bed
+                        </span>
+                        <p class="text-primary-dark">3</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
+                      >
+                        <span class="material-symbols-outlined fs-4 me-2">
+                          shower
+                        </span>
+                        <p class="text-primary-dark">2</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2 flex-shrink-0"
+                      >
+                        <span class="material-symbols-outlined fs-4 me-2">
+                          check_box_outline_blank
+                        </span>
+                        <p class="text-primary-dark">80坪</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- 第三張 -->
+
+              <div class="carousel-item">
+                <a href="#">
+                  <div class="position-relative mb-5">
+                    <img
+                      src="/2026_HexSchool_Layout_mission8/assets/search-house2-COa3W3mY.png"
+                      alt=""
+                      class="rounded-5"
+                    />
+                    <p
+                      class="bg-neutral-0 lh-lg py-1 px-6 rounded-pill position-absolute house-badge"
+                    >
+                      透天
+                    </p>
+                  </div>
+
+                  <div class="px-2">
+                    <div class="d-flex justify-content-between mb-4">
+                      <h5 class="fs-5-m fs-lg-5 text-dark">溫馨透天</h5>
+                      <div class="d-flex align-items-center">
+                        <span class="material-symbols-outlined fs-6-m fs-lg-6">
+                          location_on
+                        </span>
+                        <p class="fs-sm lh-lg">台北市信義區</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-7">
+                      <h5 class="fs-lg-5 fs-5-m me-4 lh-lg">NT$</h5>
+                      <h3 class="fs-lg-3 fs-3-m me-4 lh-base text-primary-dark">
+                        2,500
+                      </h3>
+                      <h5 class="fs-lg-5 fs-5-m lh-lg">萬</h5>
+                    </div>
+                    <div class="d-flex flex-lg-wrap gap-2">
+                      <div
+                        class="d-flex align-items-center border border-primary rounded-pill py-2 px-6"
+                      >
+                        <span class="material-symbols-outlined fs-4 me-2">
+                          king_bed
+                        </span>
+                        <p class="text-primary-dark">3</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center border border-primary rounded-pill py-2 px-6"
+                      >
+                        <span class="material-symbols-outlined fs-4 me-2">
+                          shower
+                        </span>
+                        <p class="text-primary-dark">3</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 flex-shrink-0"
+                      >
+                        <span class="material-symbols-outlined fs-4 me-2">
+                          check_box_outline_blank
+                        </span>
+                        <p class="text-primary-dark">60坪</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- 輪播控制列 -->
+            <div class="carousel-footer mt-8">
+              <!-- 三等份進度條 -->
+              <div class="carousel-indicators position-static m-0">
+                <button
+                  type="button"
+                  data-bs-target="#houseCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="第 1 張"
+                ></button>
+
+                <button
+                  type="button"
+                  data-bs-target="#houseCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="第 2 張"
+                ></button>
+
+                <button
+                  type="button"
+                  data-bs-target="#houseCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="第 3 張"
+                ></button>
+              </div>
+
+              <!-- 左右箭頭 -->
+              <div class="carousel-arrows">
+                <button
+                  type="button"
+                  data-bs-target="#houseCarousel"
+                  data-bs-slide="prev"
+                  aria-label="上一張"
+                >
+                  <span class="material-symbols-outlined"> arrow_back </span>
+                </button>
+
+                <button
+                  type="button"
+                  data-bs-target="#houseCarousel"
+                  data-bs-slide="next"
+                  aria-label="下一張"
+                >
+                  <span class="material-symbols-outlined"> arrow_forward </span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="pt-18 pb-11 pt-lg-17 footer-bg text-white">
-  <div class="container">
-    <!--手機版-->
-    <div class="d-lg-none">
-      <!--Logo-->
-      <div class="mb-10">
-        <a href="index.html"
-          ><img
-            src="data:image/png;base64,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"
-            alt="logo"
-            class="footer-logo"
-        /></a>
+    <footer class="pt-18 pb-11 pt-lg-17 footer-bg text-white bg-white">
+      <div class="container">
+        <!--手機版-->
+        <div class="d-lg-none">
+          <!--Logo-->
+          <div class="mb-10">
+            <a href="index.html"
+              ><img
+                src="data:image/png;base64,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"
+                alt="logo"
+                class="footer-logo"
+            /></a>
+          </div>
+
+          <!--連結-->
+          <div class="row g-6 mb-11">
+            <div class="col-6">
+              <a href="#" class="fs-5-m fs-lg-5 fw-bold">好房查詢</a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="fs-5-m fs-lg-5 fw-bold">房貸試算</a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="fs-5-m fs-lg-5 fw-bold">隱私權政策</a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="fs-5-m fs-lg-5 fw-bold">常見問題</a>
+            </div>
+          </div>
+
+          <!--SNS-->
+          <div class="d-flex mb-7">
+            <a href="#" class="me-5 bg-white text-default logo-size"
+              ><i class="bi bi-instagram fs-6 fw-bold"></i
+            ></a>
+            <a href="#" class="logo-size"
+              ><i class="bi bi-facebook fs-3"></i
+            ></a>
+          </div>
+          <!--Copyright-->
+          <p class="fs-sm lh-lg">
+            copyright © 2026 ISHIMA 房地產/找房平台 All Rights Reserved.
+          </p>
+        </div>
       </div>
 
-      <!--連結-->
-      <div class="row g-6 mb-11">
-        <div class="col-6">
-          <a href="#" class="fs-5-m fs-lg-5 fw-bold">好房查詢</a>
+      <!--桌機版-->
+      <div
+        class="d-none d-lg-flex px-lg-15 justify-content-between align-items-end"
+      >
+        <div>
+          <!--Logo-->
+          <div class="mb-10">
+            <a href="index.html"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOkAAAA4CAYAAAAYVd9pAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABrpJREFUeAHtne1x4zYQhpee/M9dBeFVELuC0BVESQOmJwXIqUByBbYKyEhuICdXYKWCcwdiKsilAeOwInimZSwIkIS++D4zGNn8kEQSLxa7WEBEAAAAAAAAgL5QSn3QZaLLf7qsdckJAHAYaEGOjTi3+axLSgCA/aAFmOnypJqZQ6wA7BAWnKc466y5O0wAgHjU/M4urBX8VQD6R8l+Z1u+KHSBAeiOKv3OtYrHHGIFoAWqnd/ZBfirAPigSr/zTu2HtYK/CoCMek1G2DdrXc4JAFCi4vudbZkr+KtgyCj/ZIR9M1EQKxgSar9+Z1vWCv4qOCESaYcqfb0nXT7QcfKcJMkFAXDknDn23dDxCpQ5VwgqgRPAJdKCjpuvpgBw1CSunca3+4WOj/91Weru7ooAAAAAAAAAABwqCYG9oX1+jp6nunAU+gO9RtM54FVw0X71M4FB0yhSVc46SWk3cOWc6YpZ2Haq+SjXAWmPQNbLLLle9l65OVNC2HWrv/OU/N8n1y9XumQeh/M94Wt50GUl3Zvae6f6ZS3svgwNprW9Zn1aRuU4e/D30OdO9cv2bCe+DxdN1x+C/py5fsm3t+vP6GS8Gp4BP8NLCuAHcn/YHZXjpbtkpD+XH8ab4RM1/31Cm4enPN4iybWgL7VQV3RAmIrLFSMNOI2ta2YKv8eCSoEUNCz4PvC9C6rgEvo+jsgi0J5wTafkFNs05PmdNezftUCZlGwWprypAZxd0QFheiRsWVLqRk5+FvgUyVRwPRC5owgYK5o3HBakq7OGD9sX7zOdkuPNfjLd2yn1A/cwljRc7owv35rILpyPcbgKuYYmSwo6Yhq7ptUkKr9zZYrLn15uuwIDI6UOPTxPS9eF3OMYFqj3NUCk8clIbrVZjBxE+ciTATigYMqFCV6w/zWjtymatwQmHXp60ayo6TGlnoePfa0pRBofqftTUEOUk/fpcqPLJ/3vtS6LAQaMJOaBx1czu3KKh9RjsvWMWKBe/jVEGp9U2P4Y0m3Vx7JArwlUtAkifaZImMh9atm10uVP4TSv4CZECo4Z7yBSYFe0DZIVfTC9JVuDnBlxO4FI98eVzwMCTlJqDsr5Bu9aY94/s+zijLGF+XsmnN74vSDS+PwjbGcL8KTKX5TLuw4rDJgbj8n9sbPmRCta+/ueWlpTiDQ+i4b97FdxEISXSOWf1OAu3CjSOPWTCoQOC8mHFxMTHEMuvaSNKveQzqL6w8QfVsJxTt8aIo2M8UdmnoezReDxMw5wrGuiTQkwbJkKy/bMsficlD8sBXNCkYI/tki8VA+uXD0piHQH8DAK+Qu1TiVaFuwTxLqxpFKE+10QyREs4rHmgvohF7Y/bG8wDfbKcqwzuQEi3RFGqFzBCmpHRqVYB/1bOKai29IiuaJ/vzeOYFFBpX/YGUcjUDjGvx+F7WJyA0S6Q8xYZ5WYwBWtTXrfVD/M1mlxJwJ3VW33rh5EGpNgRXtMq5QaTFdW2ILs350FmttOcE5VA3EwYXku1SA4Bw5+Jv/ZLROestaisi10+ZfCODjLzb6evn4Wgi1gxN1ebgRtDdmyNiTSCZNIkVp2uQJEmwCSPpe7wmPLbvZv31l5iHTPbPspRrQ5las0psJplQ8zpTAeWkz6Psjutb6Oe/3duFJvD79kunwRTusrWMSMhe3V0Bo5kIJEvFZ0tv2MINIDoy5aYYWCiqaxwSHAorNFb20imPWV9+xIXqhIqT38vFf1DfBJDxizPMlK2P0jDZyA4a2CegoWGWL2Lt4lN0CkO6BjckJfQY5TZUrN9+i2ZyuaU1zejL1CpLuBW14ePpmHiNUcK3VrCwJVJo8rmvrcV7DIMKb4vEkThUgjY7ouldByKsVa5eumDedx5pF0jDTeNjg4iESyW/Ab9YuUwnefBKLP+Sh/zGt0GoGj+NjSxkamsBirpVMqqrV4xTQxKgfLlwTqsDXNtrb1Okleuae7BWeUmeGYFdmDUJzcwML/CksaEU//pb5kJ5dzav7Jyb6tw9FjCSIV1P9SM1LAqEtjIH3H78kNEGlc+EYX1B+b3NUEq9pbMUvNVHxqEE5QQK7Bij5QS0zjIj3Pjf/rEuk+o4onEdFkMdXSAAvqxorKNZEWBDrTIltLXKsqNEHEghRfSDk2IYq0Yf5bTAqytSwvSVhr9SJOtt45tZxdXv2Pr8PXElbP4NKsIggLugcakhf66FJz4EtqNCaJ60wTBuY3+Il2Q0GOMS311+iGzpJf3W+hG5cXekz++HtBB4y5t+x/pvT+x5o2wSSIEgAAAAAAAHDifAN8SK9jETsf6AAAAABJRU5ErkJggg=="
+                alt="logo"
+                class="footer-logo"
+            /></a>
+          </div>
+          <!--Copyright-->
+          <p class="fs-sm text-white lh-lg">
+            copyright © 2026 ISHIMA 房地產/找房平台 All Rights Reserved.
+          </p>
         </div>
-        <div class="col-6">
-          <a href="#" class="fs-5-m fs-lg-5 fw-bold">房貸試算</a>
-        </div>
-        <div class="col-6">
-          <a href="#" class="fs-5-m fs-lg-5 fw-bold">隱私權政策</a>
-        </div>
-        <div class="col-6">
-          <a href="#" class="fs-5-m fs-lg-5 fw-bold">常見問題</a>
+        <div class="d-flex flex-column align-items-end text-default">
+          <!--SNS-->
+          <div class="d-flex mb-7">
+            <a href="#" class="me-5 logo-size btn btn-green"
+              ><i class="bi bi-instagram fs-6 fw-bold"></i
+            ></a>
+            <a href="#" class="logo-size btn"
+              ><i class="bi bi-facebook fs-3 btn-facebook"></i
+            ></a>
+          </div>
+          <ul class="d-flex list-unstyled mb-0">
+            <li class="me-8">
+              <a href="#" class="fs-6 fw-bold link-primary text-primary-dark"
+                >好房查詢</a
+              >
+            </li>
+            <li class="me-8">
+              <a href="#" class="fs-6 fw-bold link-primary text-primary-dark"
+                >房貸試算</a
+              >
+            </li>
+            <li class="me-8">
+              <a href="#" class="fs-6 fw-bold link-primary text-primary-dark"
+                >隱私權政策</a
+              >
+            </li>
+            <li>
+              <a href="#" class="fs-6 fw-bold link-primary text-primary-dark"
+                >常見問題</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-
-      <!--SNS-->
-      <div class="d-flex mb-7">
-        <a href="#" class="me-5 bg-white text-default logo-size"
-          ><i class="bi bi-instagram fs-6 fw-bold"></i
-        ></a>
-        <a href="#" class="logo-size"><i class="bi bi-facebook fs-3"></i></a>
-      </div>
-      <!--Copyright-->
-      <p class="fs-sm lh-lg">
-        copyright © 2026 ISHIMA 房地產/找房平台 All Rights Reserved.
-      </p>
-    </div>
-  </div>
-
-  <!--桌機版-->
-  <div
-    class="d-none d-lg-flex px-lg-15 justify-content-between align-items-end"
-  >
-    <div>
-      <!--Logo-->
-      <div class="mb-10">
-        <a href="index.html"
-          ><img
-            src="data:image/png;base64,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"
-            alt="logo"
-            class="footer-logo"
-        /></a>
-      </div>
-      <!--Copyright-->
-      <p class="fs-sm text-white lh-lg">
-        copyright © 2026 ISHIMA 房地產/找房平台 All Rights Reserved.
-      </p>
-    </div>
-    <div class="d-flex flex-column align-items-end text-default">
-      <!--SNS-->
-      <div class="d-flex mb-7">
-        <a href="#" class="me-5 logo-size btn btn-green"
-          ><i class="bi bi-instagram fs-6 fw-bold"></i
-        ></a>
-        <a href="#" class="logo-size btn"
-          ><i class="bi bi-facebook fs-3 btn-facebook"></i
-        ></a>
-      </div>
-      <ul class="d-flex list-unstyled mb-0">
-        <li class="me-8">
-          <a href="#" class="fs-6 fw-bold link-primary text-primary-dark"
-            >好房查詢</a
-          >
-        </li>
-        <li class="me-8">
-          <a href="#" class="fs-6 fw-bold link-primary text-primary-dark"
-            >房貸試算</a
-          >
-        </li>
-        <li class="me-8">
-          <a href="#" class="fs-6 fw-bold link-primary text-primary-dark"
-            >隱私權政策</a
-          >
-        </li>
-        <li>
-          <a href="#" class="fs-6 fw-bold link-primary text-primary-dark"
-            >常見問題</a
-          >
-        </li>
-      </ul>
-    </div>
-  </div>
-</footer>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
