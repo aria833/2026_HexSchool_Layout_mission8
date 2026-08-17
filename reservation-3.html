@@ -25,10 +25,10 @@
     />
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js"></script>
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.min.js"></script>
-    <script type="module" crossorigin src="/2026_HexSchool_Layout_mission8/assets/main-CVpG0Rcn.js"></script>
+    <script type="module" crossorigin src="/2026_HexSchool_Layout_mission8/assets/main-hL6Rvoof.js"></script>
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js"></script>
     <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.min.js"></script>
-    <link rel="stylesheet" crossorigin href="/2026_HexSchool_Layout_mission8/assets/main-D4uAq-Zz.css">
+    <link rel="stylesheet" crossorigin href="/2026_HexSchool_Layout_mission8/assets/main-O73kpLHc.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top py-lg-5">
@@ -223,25 +223,24 @@
                 <form action="" class="mb-lg-10 mb-7">
                   <div class="row g-7">
                     <div class="col-12">
-                      <div>
-                        <div>
-                          <label
-                            for="exampleFormControlInput1"
-                            class="form-label mb-2 fw-bold lh-lg ms-2 text-dark"
-                            >偏好日期</label
-                          >
-                          <span class="ms-1 fw-bold text-accent">*</span>
-                        </div>
+                      <div class="date-input-wrapper position-relative">
+                        <span
+                          class="material-symbols-outlined date-calendar-icon"
+                        >
+                          calendar_today
+                        </span>
 
-                        <div class="input-group">
-                          <input
-                            type="date"
-                            class="form-control rounded-2 py-4 px-7 calculate-input date-input border-neutral-400 bg-white"
-                            aria-label="Recipient's username"
-                            aria-describedby="basic-addon2"
-                            placeholder="年/月/日"
-                          />
-                        </div>
+                        <input
+                          id="dateInput"
+                          type="date"
+                          class="form-control rounded-2 py-4 px-7 date-input bg-white border border-neutral-400"
+                        />
+
+                        <span
+                          class="material-symbols-outlined date-arrow-icon text-primary-dark fs-5"
+                        >
+                          arrow_drop_down
+                        </span>
                       </div>
                     </div>
                     <div class="col-12">
@@ -346,7 +345,7 @@
                       </h3>
                       <h5 class="fs-lg-5 fs-5-m lh-lg">萬</h5>
                     </div>
-                    <div class="d-flex flex-lg-wrap gap-2">
+                    <div class="d-flex flex-lg-wrap gap-2 mb-7">
                       <div
                         class="d-flex align-items-center border border-primary rounded-pill py-2 px-6 me-2"
                       >
@@ -462,12 +461,16 @@
       </div>
       <ul class="d-flex list-unstyled mb-0">
         <li class="me-8">
-          <a href="#" class="fs-6 fw-bold link-primary text-primary-dark"
+          <a
+            href="search.html"
+            class="fs-6 fw-bold link-primary text-primary-dark"
             >好房查詢</a
           >
         </li>
         <li class="me-8">
-          <a href="#" class="fs-6 fw-bold link-primary text-primary-dark"
+          <a
+            href="calculate.html"
+            class="fs-6 fw-bold link-primary text-primary-dark"
             >房貸試算</a
           >
         </li>
