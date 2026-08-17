@@ -29,6 +29,9 @@
       href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.min.css"
       rel="stylesheet"
     />
+
+    <!--ASOS效果-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -59,7 +62,7 @@
             >
               <img
                 src="../assets/images/detail-Image.png"
-                alt=""
+                alt="hero image"
                 class="w-100"
               />
             </a>
@@ -75,7 +78,7 @@
                 >
                   <img
                     src="../assets/images/detail-Image-1.png"
-                    alt=""
+                    alt="image"
                     class="w-100"
                   />
                 </a>
@@ -89,7 +92,7 @@
                 >
                   <img
                     src="../assets/images/detail-Image-2.png"
-                    alt=""
+                    alt="image"
                     class="w-100"
                   />
                 </a>
@@ -115,7 +118,7 @@
                     target="_blank"
                     ><img
                       src="../assets/images/detail-Image-4.png"
-                      alt=""
+                      alt="image"
                       class="w-100"
                     /><!--手機版遮罩-->
                     <div
@@ -445,7 +448,7 @@
                   </h5>
                   <img
                     src="../assets/images/Map.png"
-                    alt=""
+                    alt="image"
                     class="rounded-6 mb-7"
                   />
                   <h5
@@ -564,12 +567,12 @@
           </h2>
           <div class="row g-5 d-none d-lg-flex">
             <!--桌機版-->
-            <div class="col-lg-4">
+            <div class="col-lg-4 card-hover" data-aos="fade-up">
               <a href="#">
                 <div class="position-relative mb-5">
                   <img
                     src="../assets/images/search-house1.png"
-                    alt=""
+                    alt="image"
                     class="rounded-5"
                   />
                   <p
@@ -625,12 +628,12 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 card-hover" data-aos="fade-up">
               <a href="#">
                 <div class="position-relative mb-5">
                   <img
                     src="../assets/images/search-house3.png"
-                    alt=""
+                    alt="image"
                     class="rounded-5"
                   />
                   <p
@@ -686,12 +689,12 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 card-hover" data-aos="fade-up">
               <a href="#">
                 <div class="position-relative mb-5">
                   <img
                     src="../assets/images/search-house2.png"
-                    alt=""
+                    alt="image"
                     class="rounded-5"
                   />
                   <p
@@ -758,7 +761,7 @@
                   <div class="position-relative mb-5">
                     <img
                       src="../assets/images/search-house1.png"
-                      alt=""
+                      alt="image"
                       class="rounded-5"
                     />
                     <p
@@ -822,7 +825,7 @@
                   <div class="position-relative mb-5">
                     <img
                       src="../assets/images/search-house3.png"
-                      alt=""
+                      alt="image"
                       class="rounded-5"
                     />
                     <p
@@ -886,7 +889,7 @@
                   <div class="position-relative mb-5">
                     <img
                       src="../assets/images/search-house2.png"
-                      alt=""
+                      alt="image"
                       class="rounded-5"
                     />
                     <p
@@ -1104,5 +1107,9 @@
 
     <script type="module" src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

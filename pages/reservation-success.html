@@ -23,6 +23,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <!--ASOS效果-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -33,7 +36,7 @@
         <div class="px-5 d-lg-none">
           <img
             src="../assets/images/detail-Image-3.png"
-            alt=""
+            alt="image"
             class="calculate-m-bg rounded-5 mt-4 mb-5"
           />
         </div>
@@ -57,7 +60,12 @@
 
           <!--送出表單-->
           <div class="text-center m-auto p-10 bg-white rounded-6 mx-w-966">
-            <img src="../assets/images/success.png" alt="" class="mb-5" />
+            <img
+              src="../assets/images/success.png"
+              alt="success"
+              class="mb-5"
+              data-aos="zoom-in"
+            />
             <h2 class="fs-2-m fs-lg-2 fw-bold lh-base text-primary-dark mb-4">
               預約申請已送出！
             </h2>
@@ -124,5 +132,9 @@
 
     <script type="module" src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

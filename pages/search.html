@@ -23,6 +23,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <!--ASOS效果-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -34,7 +37,7 @@
         <div class="px-5 d-lg-none">
           <img
             src="../assets/images/search-hero-image.png"
-            alt=""
+            alt="image"
             class="search-m-bg rounded-5 mt-4 mb-5"
           />
           <div class="p-5 mb-5">
@@ -480,12 +483,12 @@
 
           <div class="row gx-lg-7 gy-lg-13 gy-10">
             <!--房源卡片-->
-            <div class="col-lg-6 col-xl-4">
+            <div class="col-lg-6 col-xl-4 card-hover">
               <a href="house.html">
                 <div class="position-relative mb-5">
                   <img
                     src="../assets/images/search-house1.png"
-                    alt=""
+                    alt="image"
                     class="rounded-5"
                   />
                   <p
@@ -541,12 +544,12 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-6 col-xl-4">
+            <div class="col-lg-6 col-xl-4 card-hover">
               <a href="house.html">
                 <div class="position-relative mb-5">
                   <img
                     src="../assets/images/search-house2.png"
-                    alt=""
+                    alt="image"
                     class="rounded-5"
                   />
                   <p
@@ -602,12 +605,12 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-6 col-xl-4">
+            <div class="col-lg-6 col-xl-4 card-hover">
               <a href="house.html">
                 <div class="position-relative mb-5">
                   <img
                     src="../assets/images/search-house3.png"
-                    alt=""
+                    alt="image"
                     class="rounded-5"
                   />
                   <p
@@ -663,12 +666,12 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-6 col-xl-4">
+            <div class="col-lg-6 col-xl-4 card-hover">
               <a href="house.html">
                 <div class="position-relative mb-5">
                   <img
                     src="../assets/images/search-house4.png"
-                    alt=""
+                    alt="image"
                     class="rounded-5"
                   />
                   <p
@@ -724,12 +727,12 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-6 col-xl-4">
+            <div class="col-lg-6 col-xl-4 card-hover">
               <a href="house.html">
                 <div class="position-relative mb-5">
                   <img
                     src="../assets/images/search-house5.png"
-                    alt=""
+                    alt="image"
                     class="rounded-5"
                   />
                   <p
@@ -785,12 +788,12 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-6 col-xl-4">
+            <div class="col-lg-6 col-xl-4 card-hover">
               <a href="house.html">
                 <div class="position-relative mb-5">
                   <img
                     src="../assets/images/search-house6.png"
-                    alt=""
+                    alt="image"
                     class="rounded-5"
                   />
                   <p
@@ -846,12 +849,12 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-6 col-xl-4">
+            <div class="col-lg-6 col-xl-4 card-hover">
               <a href="house.html">
                 <div class="position-relative mb-5">
                   <img
                     src="../assets/images/search-house7.png"
-                    alt=""
+                    alt="image"
                     class="rounded-5"
                   />
                   <p
@@ -907,12 +910,12 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-6 col-xl-4">
+            <div class="col-lg-6 col-xl-4 card-hover">
               <a href="house.html">
                 <div class="position-relative mb-5">
                   <img
                     src="../assets/images/search-house8.png"
-                    alt=""
+                    alt="image"
                     class="rounded-5"
                   />
                   <p
@@ -968,12 +971,12 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-6 col-xl-4">
+            <div class="col-lg-6 col-xl-4 card-hover">
               <a href="house.html">
                 <div class="position-relative mb-5">
                   <img
                     src="../assets/images/search-house9.png"
-                    alt=""
+                    alt="image"
                     class="rounded-5"
                   />
                   <p
@@ -1103,5 +1106,9 @@
 
     <script type="module" src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
