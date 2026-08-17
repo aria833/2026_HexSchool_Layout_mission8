@@ -83,3 +83,65 @@
 .step-size {
   font-size: 68px;
 }
+
+.date-input-wrapper {
+  position: relative;
+}
+
+.date-input {
+  position: relative;
+  cursor: pointer;
+
+  // 預留左邊月曆 icon + 文字
+  padding-left: 52px !important;
+
+  // 預留右邊箭頭
+  padding-right: 48px !important;
+
+  // 隱藏原生日期文字
+  color: transparent;
+
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  // 有選擇日期後恢復文字顏色
+  &:valid {
+    color: var(--bs-dark);
+  }
+}
+
+.date-calendar-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  pointer-events: none;
+  font-size: 20px;
+}
+
+.date-placeholder {
+  position: absolute;
+  left: 52px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  pointer-events: none;
+  font-size: 14px;
+}
+
+.date-arrow-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  pointer-events: none;
+  font-size: 20px;
+}

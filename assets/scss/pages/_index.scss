@@ -1,3 +1,21 @@
+@media (min-width: 992px) {
+  .index-bg-deco {
+    background-image: url("../images/index-bg-deco.png");
+    background-repeat: no-repeat;
+    background-size: 2711px 2063px;
+
+    background-position: left -215px top 1537px;
+  }
+
+  .select-bg-deco {
+    background-image: url("../images/index-bg-deco2.png");
+    background-repeat: no-repeat;
+    background-size: 585px 450px;
+    background-position: right -216px top 120px;
+    z-index: -1;
+  }
+}
+
 //區域：找到您的夢想家園
 .banner {
   min-height: 100vh;
@@ -240,6 +258,10 @@
   height: auto;
 }
 
+.fs-96 {
+  font-size: 96px;
+}
+
 .house-bg {
   background:
     linear-gradient(90deg, rgba(35, 46, 26, 0.2) 0%, rgba(35, 46, 26, 0.7) 80%),
@@ -249,11 +271,6 @@
   background-position: center;
   border-radius: 24px;
   flex-grow: 1;
-}
-
-.px-45 {
-  padding-left: 45px;
-  padding-right: 45px;
 }
 
 .house-badge {
@@ -362,8 +379,8 @@
   .ideal-bg {
     background-image: url("../images/stone.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 895px 636px;
+    background-position: left 53px top 60px;
   }
 
   .tool-mask2 {
