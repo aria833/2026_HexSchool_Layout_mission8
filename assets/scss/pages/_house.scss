@@ -17,3 +17,94 @@
     display: none;
   }
 }
+
+.house-deco {
+  background-image: url("../images/house-deco.png");
+  background-repeat: no-repeat;
+  background-position: left -362px top 40px;
+}
+
+.carousel-footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+}
+
+.carousel-indicators {
+  position: static;
+  display: flex;
+  width: 100%;
+
+  flex: 1 1 0;
+  min-width: 0;
+
+  margin: 0;
+  padding: 0;
+  gap: 0;
+
+  button {
+    width: 0;
+    height: 4px;
+    flex: 1 1 0;
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+    border-radius: 0;
+
+    background-color: $neutral-200;
+    opacity: 1;
+  }
+
+  button.active {
+    background-color: $secondary;
+  }
+}
+
+.carousel-arrows {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+
+  button {
+    width: 40px;
+    height: 40px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid $secondary;
+    border-radius: 50%;
+    background-color: transparent;
+    color: $secondary;
+  }
+}
+
+.carousel-arrows {
+  display: flex;
+  gap: 8px;
+
+  button {
+    width: 40px;
+    height: 40px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $primary;
+    color: $white;
+    border-radius: 8px;
+
+    .material-symbols-outlined {
+      font-size: 20px;
+    }
+  }
+}
